@@ -111,7 +111,6 @@ li {
     padding: 1em 0;
 
     position: absolute;
-    /*WITH RESPECT TO PARENT*/
 
     display: none;
 
@@ -128,7 +127,6 @@ li {
     padding: 1em 0;
 
     position: absolute;
-    /*WITH RESPECT TO PARENT*/
 
     display: none;
 
@@ -186,9 +184,7 @@ li {
 }
 
 
-/*RESPONSIVE NAVBAR MENU STARTS*/
-
-/* CHECKBOX HACK */
+/*RESPONSIVE CHECKBOX*/
 
 input[type=checkbox] {
 
@@ -208,7 +204,7 @@ input[type=checkbox] {
 
 }
 
-/* APPLYING MEDIA QUERIES */
+/*RESPONSIVE*/
 
 @media (max-width: 768px) {
 
