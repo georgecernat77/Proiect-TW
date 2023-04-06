@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="pagina_animals.css">
     <link rel="stylesheet" href="../nav_bar/nav_bar.css">
     <title>Zoo Web Manager</title>
+
+    
 </head>
 
 <body>
@@ -89,7 +91,78 @@
     
     </div>
 
+    <div class="main-image">
+        <img src="../images/animals_image.jpg" class ="main-image" >
+        <br>
+    </div>
+    <div class ="main-area">
+        <hr><br><br><br>
+        <div class = "filter-header">
+            <h1>Search an animal using filters </h1>
+        </div>
+        <br>&emsp;<p style="color:rgb(11, 10, 10); font-family: Verdana, Geneva, Tahoma, sans-serif;margin-left: 2%;font-size: 150%; margin-bottom: 5%;">In this page you can search for a specific list of animals using the filters down below. </p>
+        <div class ="filters">    
+                    
+                        <select name="regiune-filter" id="regiune-select">
+                            <option value="all_regions" selected>All Regions</option>
+                            <option value="africa">Africa</option>
+                            <option value="america_nord">America de Nord</option>
+                            <option value="america_sud">America de Sud</option>
+                            <option value="asia" >Asia</option>
+                            <option value="australia" >Australia</option>
+                            <option value="europa">Europa</option>
+                            <option value="pen_araba">Peninsula araba</option>
+                        </select>
+                        <span style="display:inline-block; width: 25%;"></span>
+                        <select name="habitat-filter" id="habitat-select">amfibieni
+                            <option value="all_habitats" selected>All Habitats</option>
+                            <option value="desert">Desert</option>
+                            <option value="ocean">Ocean</option>
+                            <option value="forest">Forest</option>
+                            <option value="savanna" >Savanna</option>
+                            <option value="marshy_area" >Marshy Area</option>
+                            <option value="mount_area">Mountainous area</option>
+                            </select>
+                        <span style="display:block; height: 6em;"></span>
+                        <select name="type-filter" id="type-select">
+                            <option value="all_types" selected>All Types</option>
+                            <option value="mamifer">Mammalian</option>
+                            <option value="amfibieni">Amphibians</option>
+                            <option value="nevertebrate">Invertebrates</option>
+                            <option value="pasari" >Birds</option>
+                            <option value="reptile" >Reptiles</option>
+                        </select>
+                        <span style="display:inline-block; width: 30%;"></span>
+                        <select name="conservation-status" id="conservation-status">
+                            <option value="staile" selected>Stable</option>
+                            <option value="lower_risk">Lower Risk</option>
+                            <option value="in_pericol">Threatened</option>
+                            <option value="disparut">Extinct</option>
+                        </select>
+                    
+          
+        </div>
+       
+        <div class="filter-results">
+            <h2>Animals that match with your search: </h2>
+            <div class = "result-1">
+                <a href ="../pagina_leu/pagina_leu.html">
+                    <img src="../images/leu_image.jpg" class = "img-results">
+                    <p>LEUL</p>
+                </a>
+                
+            </div>
+            
 
+
+
+
+        </div>
+        
+        
+
+
+    </div>
 
 
 
