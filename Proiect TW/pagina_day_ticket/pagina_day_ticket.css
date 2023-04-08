@@ -1,0 +1,104 @@
+body {
+    font-family: 'Verdana',Helvetica,Arial,Lucida,sans-serif;
+    background-image: linear-gradient(360deg,#f4edd0,transparent);
+    
+}
+h1 h2 h3 .h1 .h2 .h3{
+    font-family: 'Verdana',Helvetica,Arial,Lucida,sans-serif;
+}
+
+.titlu h1{
+    font-size: 3em;
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    font-family: 'Verdana',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 530;
+    line-height: 1.1;
+    color: rgba(126, 188, 34, 0.723);
+    
+}
+
+.descriere-intro p{
+    text-align: center;
+    font-size: 1.1em;
+    /* font-weight: 500; */
+}
+
+.benefits-title h2{
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    font-family: 'Verdana',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 530;
+    line-height: 1.1;
+    color: rgba(204, 198, 31, 0.607);
+}
+.benefits-list{
+    padding:1% 22%;
+    display: block;
+    font-size: 1.2em;
+    font-weight: 530;
+
+}
+
+ul {
+    list-style-position: outside;
+    /* You may want to add an additional padding-left: */
+    
+    float:inline-start;
+}
+.payment-area{
+    padding:5% 22%;
+    display:block;
+}
+.payment-title h3{
+    font-size: 2.2em;
+    text-align: center;
+    padding-bottom: 1em;
+    font-weight: 540;
+    font-style:initial;
+    line-height: 1.1;
+    color: black(11, 11, 11, 0.616);
+    font-family: cursive;
+}
+.payment-text p{
+    text-align: center;
+    padding-bottom: 5%;
+   
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],input[type=email],input[type=tel],input[type=number], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .payment-form {
+    border-radius: 1%;
+    background-color: #f4edd0;
+    padding: 5% 5%;
+  }
