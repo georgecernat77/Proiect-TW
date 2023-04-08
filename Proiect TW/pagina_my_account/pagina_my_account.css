@@ -1,0 +1,127 @@
+body {
+    font-family: 'Verdana',Helvetica,Arial,Lucida,sans-serif;
+    background-image: linear-gradient(85deg,#f4edd0,transparent);
+    
+}
+.titlu h1{
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: 'Verdana',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 550;
+    line-height: 1.1;
+    color: #000000b8;
+}
+
+
+.user-logo{
+    padding-left:10%;
+    display :block;
+}
+.user-logo-title p{
+    
+    padding-left:6%;
+    padding-top:0.5%;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+    font-family: 'Verdana',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 530;
+    line-height: 1.1;
+    color: rgba(0, 0, 0, 0.723);
+
+}
+
+
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 13%;
+    background-color: #f4edd0;
+    position: fixed;
+    height: 23%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #282828;
+    color: white;
+  }
+  .sidebar a.logout:hover {
+    background-color: #db4141; 
+  }
+  .sidebar a.logout{
+    background-color: #b23b3b;    
+  }
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active, .logout) {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.main-area {
+    margin-left: 200px;
+    padding: 1px 16px;
+    /* height: 1000px; */
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.main-area {margin-left: 0;}
+    .main-title{
+        padding-top:5%;
+    }
+}
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+    .main-title{
+        padding-top:5%;
+    }
+  }
+
+
+
+  .main-title{
+    font-size:1.2em;
+    padding-left: 1.5em;
+    padding-bottom: 1em;
+    font-family: 'Verdana',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 530;
+    line-height: 1.1;
+    color: rgba(0, 0, 0, 0.723);
+  }
+
+  .account-details{
+    padding: 5% 5%;
+    padding-top:1em;
+    font-family: 'Verdana',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 530;
+    font-size:1.3em;
+    line-height: 2;
+    color: rgb(239, 232, 232);
+    border: 5px solid gray;
+    background-color: #000000b8;
+    width: 40%;
+  }
