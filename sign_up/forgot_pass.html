@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forgot_pass.css">
+    <link rel="stylesheet" href="../nav_bar/nav_bar.css">
+    <title> Forgot Password</title>
+</head>
+<nav class="navbar">
+
+  <!-- LOGO -->
+
+  <div class="logo"><a href="../pagina_principala_user/pagina_principala_user.html">Zoo Web Manager</a></div>
+
+  <!-- NAVIGATION MENU -->
+
+  <ul class="nav-links">
+      <!-- USING CHECKBOX HACK -->
+
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label> <!--displays hamburger icon-->
+
+      <!-- NAVIGATION MENUS -->
+
+      <div class="menu">
+
+
+          <li><a href="../pagina_animals/pagina_animals.html">Animals</a></li>
+
+          <li class="atractii">
+
+              <a>Attractions</a>
+
+              <!-- DROPDOWN MENU ATRACTII -->
+
+              <ul class="dropdown-atractii">
+                  <li><a href="../pagina_casa_reptilelor/pagina_casa_reptilelor.html">Casa Reptilelor</a></li>
+                  <li><a href="#">Dropdown 2</a></li>
+
+                  <li><a href="#">Dropdown 2</a></li>
+
+                  <li><a href="#">Dropdown 3</a></li>
+
+                  <li><a href="#">Dropdown 4</a></li>
+
+              </ul>
+
+          </li>
+
+          <li class="ticket">
+
+              <a>Buy Ticket<a>
+
+                      <!-- DROPDOWN MENU ATRACTII -->
+
+                      <ul class="dropdown-ticket">
+                          <li><a href="#">Dropdown 1 </a></li>
+                          <li><a href="#">Dropdown 2</a></li>
+
+                          <li><a href="#">Dropdown 2</a></li>
+
+                          <li><a href="#">Dropdown 3</a></li>
+
+                          <li><a href="#">Dropdown 4</a></li>
+
+                      </ul>
+
+          </li>
+
+          <li><a href="../pagina_about/pagina_about.html">About</a></li>
+
+      </div>
+
+  </ul>
+
+</nav>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+  
+      <label for="psw"><b>New Password</b></label>
+      <input type="password" placeholder="Enter New Password" name="psw" required>
+
+      <label for="psw"><b>Repeat New Password</b></label>
+      <input type="password" placeholder="Repeat New Password" name="psw" required>
+      
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Reset Password</button>
+    </div>
+  </form>
