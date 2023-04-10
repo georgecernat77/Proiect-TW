@@ -1,0 +1,143 @@
+body{
+    background-image: linear-gradient(black,orange);
+}
+
+.div1{
+    display: flex;
+    justify-content: center;
+}
+.title{
+    font-size: 300%;
+    color: red;
+
+}
+.animale{
+    display :flex;
+
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.animal{
+    display: flex;
+    flex-direction: column;
+}
+.div2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.description{
+    padding: 5%;
+    color:orange;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 175%;
+}
+.text{
+    font-size: 150%;
+    color:yellow;
+    font-style: italic;
+}
+.descriere_animal{
+    padding: 10%;
+    font-size: 200%;
+    font-style: italic;
+    color: blue;
+}
+.animalute{
+    display: flex;
+    justify-content: center;
+    font-size: 140%;
+    color:yellow;
+}
+.open{
+    font-size: 150%;
+    color: green;
+}
+
+.closed{
+    padding: 10%;
+    font-size: 150%;
+    color: red;
+}
+
+.list{
+    font-size: 120%;
+    color:blue;
+}
+
+.program{
+    padding: 10%;
+    display:flex;
+    font-size: 200%;
+    justify-content: center;
+    color:brown;
+}
+ol{
+    display: flex;
+    justify-content: space-evenly;
+}
+.hour{
+    padding: 10%;
+    font-size: 150%;
+    color:white;
+}
+
+.image{
+    padding: 10%;
+    max-width: 60%;
+    min-width: 60%;
+
+    max-height: 60%;
+    max-height: 60%;
+    border-radius: 45%;
+}
+
+footer{
+    position: absolute;
+    left:0;
+    right: 0;
+    background: #56870eb8;
+    height: auto;
+    width: auto;
+    padding-top: 1%;
+    color: #fff;
+    width: 120%;
+  }
+  
+  .footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  
+  }
+  
+  .footer-content h4{
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+    
+  }
+  .about-text p{
+    padding-top: 2em;
+    padding-left: 1em;
+    
+  }
+  
+  .footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #f5d6d6;
+  padding-bottom:2%;
+  }
+  .navbar{
+    width: 120%;
+  }
+
+  

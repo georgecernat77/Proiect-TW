@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+            <title>ZoM</title>
+            <link rel="stylesheet" href="log.css">
+            <link rel="stylesheet" href="../nav_bar/nav_bar.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+
+        <nav class="navbar">
+
+            <!-- LOGO -->
+
+            <div class="logo"><a>Zoo Web Manager</a></div>
+
+            <!-- NAVIGATION MENU -->
+
+            <ul class="nav-links">
+                <!-- USING CHECKBOX HACK -->
+
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label> <!--displays hamburger icon-->
+
+                <!-- NAVIGATION MENUS -->
+
+                <div class="menu">
+
+                    <li><a href="../pagina_sign_in/SignIn.html">Sign In</a></li>
+                    <li><a href="#">Animals</a></li>
+
+                    <li class="atractii">
+
+                        <a>Attractions</a>
+
+                        <!-- DROPDOWN MENU ATRACTII -->
+
+                        <ul class="dropdown-atractii">
+                            <li><a href="#">Reptile House</a></li>
+                            <li><a href="#">Halls Of the Depths</a></li>
+                            <li><a href="#">Playground</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="ticket">
+
+                        <a>Buy Ticket<a>
+
+                                <!-- DROPDOWN MENU ATRACTII -->
+
+                                <ul class="dropdown-ticket">
+                                    <li><a href="#">Day Ticket </a></li>
+                                    <li><a href="#">Monthly Pass</a></li>
+    
+                                </ul>
+
+                    </li>
+
+                    <li><a href="#">About</a></li>
+
+                </div>
+
+            </ul>
+
+    </nav>
+    
+
+    <h1 class="log_in">Log In</h1>
+    <div class="continut">
+
+
+        <form action="../pagina_about/pagina_about.html" method="post">
+                <label> Username</label>
+                <input type="text" class="inp"><br>
+                <label> Password</label>
+                <input type="password" class="inp"><br>
+            <span style="display:block;height: 5%;"></span>
+            <div class="form">
+                <input type="submit" value="Submit" >
+            </div>
+        </form>
+    </div>
+    </body>
+    <footer>
+        <div class="footer-content">
+            <h4>&copy;Zoo Web Manager</h4>
+            <p>Zoo Web Manager is a web application where you can find more details about our Zoo Garden but most importantly is a place where you can learn more details about our animals. 
+            </p>
+        </div>
+    </footer>
+
+</html>

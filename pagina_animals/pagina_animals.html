@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagina_animals.css">
+    <link rel="stylesheet" href="../nav_bar/nav_bar.css">
+    <title>ZoM</title>
+
+    
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <!-- LOGO -->
+
+        <div class="logo"><a>Zoo Web Manager</a></div>
+
+        <!-- NAVIGATION MENU -->
+
+        <ul class="nav-links">
+            <!-- USING CHECKBOX HACK -->
+
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label> <!--displays hamburger icon-->
+
+            <!-- NAVIGATION MENUS -->
+
+            <div class="menu">
+
+                <li><a href="../pagina_my_account/pagina_my_account.html">My Account</a></li>
+
+                <li><a href="../pagina_animals/pagina_animals.html">Animals</a></li>
+
+                <li class="atractii">
+
+                    <a>Attractions</a>
+
+                    <!-- DROPDOWN MENU ATRACTII -->
+
+                    <ul class="dropdown-atractii">
+                        <li><a href="../pagina_casa/casa_reptilelor.html">Reptile House</a></li>
+                        <li><a href="../pagina_halls/HallOfTheDeapths.html">Halls of The Depths</a></li>
+
+                        <li><a href="../pagina_playground/PlayGround.html">Playground</a></li>
+
+                    </ul>
+
+                </li>
+
+                <li class="ticket">
+
+                    <a>Buy Ticket<a>
+
+                            <!-- DROPDOWN MENU ATRACTII -->
+
+                            <ul class="dropdown-ticket">
+                                <li><a href="../pagina_day_ticket/pagina_day_ticket.html">Day Ticket </a></li>
+                                <li><a href="../pagina_monthly_pass/pagina_monthly_pass.html">Monthly Pass</a></li>
+
+                            </ul>
+
+                </li>
+
+                <li><a href="../pagina_about/pagina_about.html">About</a></li>
+
+            </div>
+
+        </ul>
+
+    </nav>
+    
+    
+    <div class="titlu">
+        
+        <h1>Animals</h1>
+    
+    </div>
+
+    <div class="main-image">
+        <img src="../images/animals_image.jpg" class ="main-image" >
+        <br>
+    </div>
+    <div class ="main-area">
+        <hr><br><br><br>
+        <div class = "filter-header">
+            <h1>Search an animal using filters </h1>
+        </div>
+        <br>&emsp;<p style="color:rgb(11, 10, 10); font-family: Verdana, Geneva, Tahoma, sans-serif;margin-left: 2%;font-size: 150%; margin-bottom: 5%;">In this page you can search for a specific list of animals using the filters down below. </p>
+        <div class ="filters">    
+                    
+                        <select name="regiune-filter" id="regiune-select">
+                            <option value="all_regions" selected>All Regions</option>
+                            <option value="africa">Africa</option>
+                            <option value="america_nord">America de Nord</option>
+                            <option value="america_sud">America de Sud</option>
+                            <option value="asia" >Asia</option>
+                            <option value="australia" >Australia</option>
+                            <option value="europa">Europa</option>
+                            <option value="pen_araba">Peninsula araba</option>
+                        </select>
+                        <span style="display:inline-block; width: 20%;"></span>
+                        <select name="habitat-filter" id="habitat-select">amfibieni
+                            <option value="all_habitats" selected>All Habitats</option>
+                            <option value="desert">Desert</option>
+                            <option value="ocean">Ocean</option>
+                            <option value="forest">Forest</option>
+                            <option value="savanna" >Savanna</option>
+                            <option value="marshy_area" >Marshy Area</option>
+                            <option value="mount_area">Mountainous area</option>
+                            </select>
+                        <span style="display:block; height: 6em;"></span>
+                        <select name="type-filter" id="type-select">
+                            <option value="all_types" selected>All Types</option>
+                            <option value="mamifer">Mammalian</option>
+                            <option value="amfibieni">Amphibians</option>
+                            <option value="nevertebrate">Invertebrates</option>
+                            <option value="pasari" >Birds</option>
+                            <option value="reptile" >Reptiles</option>
+                        </select>
+                        <span style="display:inline-block; width: 24%;"></span>
+                        <select name="conservation-status" id="conservation-status">
+                            <option value="staile" selected>Stable</option>
+                            <option value="lower_risk">Lower Risk</option>
+                            <option value="in_pericol">Threatened</option>
+                            <option value="disparut">Extinct</option>
+                        </select>
+                    
+          
+        </div>
+       
+        <div class="filter-results">
+            <h2>Animals that match with your search: </h2>
+            <div class = "result-1">
+                <a href ="../pagina_leu/Animale.html">
+                    <img src="../images/leu_image.jpg" class = "img-results">
+                    <figcaption style="font-size: 200%;"><span style="display: inline-block;width: 10%;"></span>LION</figcaption>
+                </a>
+                
+            </div>
+            
+
+
+
+
+        </div>
+        
+        
+
+
+    </div>
+
+
+
+
+
+
+</body>
+<footer>
+    <div class="footer-content">
+        <h4>&copy;Zoo Web Manager</h4>
+        <p>Zoo Web Manager is a web application where you can discover our Zoo Garden but most importantly is a place where you can learn more details about our animals. 
+        </p>
+    </div>
+</footer>
+
+
+</html>
