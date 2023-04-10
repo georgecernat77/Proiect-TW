@@ -8,13 +8,13 @@ body{
 }
 p{
     color: blueviolet;
-    font-size: 75% ;
+    font-size: 150% ;
     font-style: italic;
     font-family: 'Courier New', Courier, monospace;
 }
 .a{
     color: red;
-    font-size: 75%;
+    font-size: 175%;
     font-style: italic,bold;
 
 }
@@ -30,11 +30,11 @@ ol{
 pre{
     align-self: flex-start;
     color:green;
-    font-size: 50%;
+    font-size: 120%;
     font-family: 'Times New Roman', Times, serif;
 }
 h1{
-    font-size: 150%;
+    font-size: 250%;
 }
 h3{
     display:flex;
@@ -54,7 +54,7 @@ h3{
 .left{
     justify-self: flex-start;
     padding: 25%;
-    font-size: 75%;
+    font-size: 125%;
     color:lightgreen;
     border-radius: 10px;
 }
@@ -62,7 +62,7 @@ h3{
 .right{
     justify-self: flex-start;
     padding: 25%;
-    font-size: 75%;
+    font-size: 125%;
     color:lightgreen;
     border-radius: 10px;
 }
