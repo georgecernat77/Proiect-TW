@@ -1,0 +1,361 @@
+body {
+  background-image: url("../images/background.jpg");
+  background-color: #000000;
+}
+
+h1,h2,h3{
+ 
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 42px;
+  color: #ffffff;
+  padding-bottom:2%;
+  text-align: right;
+}
+
+.button {
+  font-family: Myriad W01 SmBd;
+  font-size: .8125rem;
+  line-height: 1rem;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  height: 27px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50px;
+  padding: 2%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-color: #f07300;
+  transition: background-color .2s ease;
+}
+
+.a{
+
+  text-align: right;
+}
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+
+a {
+
+  text-decoration: none;
+  font-family: cursive;
+}
+a:visited{
+  text-decoration: none;
+}
+li {
+
+  list-style: none;
+
+}
+
+.navbar {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 20px;
+
+  background-color: rgb(0, 0, 0);
+
+  color: #fff;
+
+}
+
+.nav-links a {
+
+  color: #fff;
+
+}
+
+/* LOGO */
+
+.logo {
+
+  font-size: 32px;
+  color: #fff;
+
+}
+
+.logo a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* NAVBAR MENU */
+
+.menu {
+
+  display: flex;
+
+  gap: 1em;
+
+  font-size: 18px;
+
+}
+
+.menu li:hover {
+
+  background-color: #4c9e9e;
+
+  border-radius: 5px;
+
+  transition: 0.3s ease;
+
+}
+
+.menu li {
+
+  padding: 5px 14px;
+
+}
+
+/* DROPDOWN MENU */
+
+.atractii {
+
+  position: relative;
+  text-decoration: none;
+
+}
+
+.ticket {
+  position: relative;
+
+}
+
+.dropdown-atractii {
+
+  background-color: rgb(1, 139, 139);
+
+  padding: 1em 0;
+
+  position: absolute;
+
+  display: none;
+
+  border-radius: 8px;
+
+  top: 35px;
+
+}
+
+.dropdown-ticket {
+
+  background-color: rgb(1, 139, 139);
+
+  padding: 1em 0;
+
+  position: absolute;
+
+  display: none;
+
+  border-radius: 8px;
+
+  top: 35px;
+
+
+}
+
+.dropdown-atractii .dropdown-ticket li+li {
+
+  margin-top: 10px;
+
+}
+
+
+.dropdown-atractii li {
+
+  padding: 0.5em 1em;
+
+  width: 8em;
+
+  text-align: center;
+
+}
+
+.dropdown-ticket li {
+
+  padding: 0.5em 1em;
+
+  width: 8em;
+
+  text-align: center;
+
+}
+
+.dropdown-atractii .dropdown-ticket li:hover {
+
+  background-color: #4c9e9e;
+
+}
+
+
+.atractii:hover .dropdown-atractii {
+
+  display: block;
+
+}
+
+.ticket:hover .dropdown-ticket {
+
+  display: block;
+
+}
+
+
+/*RESPONSIVE CHECKBOX*/
+
+input[type=checkbox] {
+
+  display: none;
+
+}
+
+/*HAMBURGER MENU*/
+
+.hamburger {
+
+  display: none;
+
+  font-size: 24px;
+
+  user-select: none;
+
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 768px) {
+
+  .menu {
+
+      display: none;
+
+      position: absolute;
+
+      background-color: teal;
+
+      right: 0;
+
+      left: 0;
+
+      text-align: center;
+
+      padding: 16px 0;
+
+  }
+
+  .menu li:hover {
+
+      display: inline-block;
+
+      background-color: #4c9e9e;
+
+      transition: 0.3s ease;
+
+  }
+
+  .menu li+li {
+
+      margin-top: 12px;
+
+  }
+
+  input[type=checkbox]:checked~.menu {
+
+      display:block;
+
+
+  }
+
+  .hamburger {
+
+      display: block;
+
+  }
+
+  .dropdown-ticket {
+
+      left: 50%;
+
+      top: 30px;
+
+      transform: translateX(35%);
+
+  }
+
+  .dropdown-atractii {
+
+      left: 50%;
+
+      top: 30px;
+      padding-left: 0.5em;
+      transform: translateX(35%);
+
+  }
+
+  .dropdown-atractii .dropdown-ticket li:hover {
+
+      background-color: #4c9e9e;
+
+
+
+  }
+
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
+    background: #000000;
+    height: auto;
+    width: auto;
+    padding-top: 1%;
+    color: #fff;
+  }
+  
+  .footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  
+  }
+  
+  .footer-content h4{
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+    
+  }
+  
+  
+  .footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #f5d6d6;
+  padding-bottom:2%;
+  }
