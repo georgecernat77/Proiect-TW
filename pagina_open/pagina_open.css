@@ -1,16 +1,45 @@
 body {
-  background-image: url("../images/background.jpg");
+  background-image: url("../images/background.png");
   background-color: #000000;
+}
+
+
+h1{
+  padding-top: 100px;
+
 }
 
 h1,h2,h3{
  
-  margin: 10px auto;
-  line-height: 28px;
-  font-size: 42px;
+  margin: 10px auto ;
+  line-height: 35px;
+  font-size: 32px;
   color: #ffffff;
   padding-bottom:2%;
   text-align: right;
+  padding-right: 100px;
+  line-height: 0.7;
+
+}
+
+h4{
+
+  margin: 10px;
+  line-height: 28px;
+  font-size: 18px;
+  color: #ffffff;
+  padding-bottom:2%;
+  text-align: right;
+  padding-right: 100px;
+
+
+}
+
+h5{
+
+  text-align: right;
+  padding-right: 100px;
+
 }
 
 .button {
@@ -30,12 +59,9 @@ h1,h2,h3{
   color: #fff;
   background-color: #f07300;
   transition: background-color .2s ease;
-}
 
-.a{
 
-  text-align: right;
-}
+  }
 
 * {
 
@@ -88,7 +114,7 @@ li {
 
 .logo {
 
-  font-size: 32px;
+  font-size: 20px;
   color: #fff;
 
 }
@@ -112,7 +138,7 @@ li {
 
 .menu li:hover {
 
-  background-color: #4c9e9e;
+  background-color: #000000;
 
   border-radius: 5px;
 
@@ -142,7 +168,7 @@ li {
 
 .dropdown-atractii {
 
-  background-color: rgb(1, 139, 139);
+  background-color: rgb(66, 66, 66);
 
   padding: 1em 0;
 
@@ -158,7 +184,7 @@ li {
 
 .dropdown-ticket {
 
-  background-color: rgb(1, 139, 139);
+  background-color: rgb(66, 66, 66);
 
   padding: 1em 0;
 
@@ -320,42 +346,3 @@ input[type=checkbox] {
   }
 
 }
-
-footer{
-    position: absolute;
-    bottom: 0;
-    left:0;
-    right: 0;
-    background: #000000;
-    height: auto;
-    width: auto;
-    padding-top: 1%;
-    color: #fff;
-  }
-  
-  .footer-content{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  
-  }
-  
-  .footer-content h4{
-  font-size: 2.1rem;
-  font-weight: 500;
-  text-transform: capitalize;
-  line-height: 3rem;
-    
-  }
-  
-  
-  .footer-content p{
-  max-width: 500px;
-  margin: 10px auto;
-  line-height: 28px;
-  font-size: 14px;
-  color: #f5d6d6;
-  padding-bottom:2%;
-  }
