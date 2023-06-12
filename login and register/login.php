@@ -2,8 +2,6 @@
 session_start();
 if(isset($_SESSION["user"]))
     header("Location: index.php");
-?>
-<?php
 require_once('config.php');
 ?>
 <!DOCTYPE html>
@@ -15,6 +13,7 @@ require_once('config.php');
     <link rel="stylesheet" href="nav_bar.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script defer src="./login.js"></script>
    </head>
 <body>
     <div>
@@ -30,8 +29,10 @@ require_once('config.php');
                   $user = $stmtselect->fetch(PDO::FETCH_ASSOC);
                   if($stmtselect->rowCount() > 0){
                     if(password_verify($password, $user["password"])){
-                        session_start();
-                        $_SESSION["user"] = "ok";
+                        $_SESSION["user"] = $email;
+                        $_SESSION["firstname"] = $user['firstname'];
+                        $_SESSION["lastname"] = $user['lastname'];
+                        $_SESSION["accounttype"] = $user['accounttype'];
                         header("Location: index.php");
                         die();
                     }
@@ -92,7 +93,7 @@ require_once('config.php');
             </p>
         </div>
         <div class="content">
-            <form action="login.php" method="post">
+            <form id="form" action="login.php" method="post">
             <div class="user-details">
                 <div class="input-box">
                 <span class="details">Email</span>

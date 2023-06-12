@@ -2,8 +2,6 @@
 session_start();
 if(isset($_SESSION["user"]))
     header("Location: index.php");
-?>
-<?php
 require_once('config.php');
 ?>
 
@@ -17,6 +15,7 @@ require_once('config.php');
   <link rel="stylesheet" href="nav_bar.css">
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="./register.js"></script>
 </head>
 
 <body>
@@ -28,6 +27,7 @@ require_once('config.php');
       $lastname = $_POST['lastname'];
       $password = $_POST['pass'];
       $cpassword = $_POST['cpass'];
+      $accounttype = $_POST['accounttype'];
       $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
       $email = $_POST['email'];
       $select = "SELECT * FROM users WHERE email = '$email'";
@@ -36,22 +36,17 @@ require_once('config.php');
       if($selectResult){
         if($stmtselect->rowCount() > 0)
           $error = "An user with this email exists already!";
-        else if($password != $cpassword)
-        $error = "The passwords don't match!";
         else
         {
-            $sql = "INSERT INTO users (firstname, lastname, password, email) VALUES(?,?,?,?)";
+            $sql = "INSERT INTO users (firstname, lastname, password, email, accounttype) VALUES(?,?,?,?,?)";
             $stmtinsert = $db->prepare($sql);
-            $result = $stmtinsert->execute([$firstname, $lastname, $hashedPassword, $email]);
+            $result = $stmtinsert->execute([$firstname, $lastname, $hashedPassword, $email, $accounttype]);
             if ($result) {
-              // session_start();
-              // $_SESSION["user"] = "ok";
               header("Location: login.php");
               die();
             } else {
               $error = "Error in saving";
             }
-            echo $lastname . " " . $firstname . " " . $password . " " . $email;
         }
       }
       else{
@@ -90,11 +85,12 @@ require_once('config.php');
     </div>
   </nav>
   <script src="nav_bar.js"></script>
-  <?php
-    if($error != null){
-      ?> <style>.error-message{display: block}</style> <?php
-    }
-    ?>
+  <div>
+    <?php
+      if($error != null){
+        ?> <style>.error-message{display: block}</style> <?php
+      }
+      ?>
   </div>
   <div class="register-form">
     <div class="container">
@@ -107,7 +103,7 @@ require_once('config.php');
           </p>
       </div>
       <div class="content">
-        <form action="register.php" method="post">
+        <form id="form" action="register.php" method="post">
           <div class="user-details">
             <div class="input-box">
               <span class="details">First Name</span>
@@ -131,14 +127,17 @@ require_once('config.php');
             </div>
             <div class="input-box">
               <span class="details">Account Type</span>
-              <select name="user_type">
-                <option value="user">USER</option>
-                <option value="admin">ADMIN</option>
+              <select name="accounttype" >
+                <option value="USER" >USER</option>
+                <option value="ADMIN" >ADMIN</option>
               </select>
             </div>
           </div>
           <div class="button">
             <input type="submit" id="register" name="create" value="Register">
+          </div>
+          <div class = "register-box">
+            <span class="register-text"><a href = "login.php">I already have an account</a></span>
           </div>
         </form>
       </div>
