@@ -1,7 +1,6 @@
 body {
   background-image: url("../images/background.png");
-  background-color: #000000;
-}
+  background: linear-gradient(135deg, #d6cda5, #8a7622);}
 
 
 h1{
