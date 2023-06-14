@@ -1,3 +1,5 @@
+
+
 body {
   background-image: url("../images/background.png");
   background: linear-gradient(135deg, #d6cda5, #8a7622);}
@@ -50,7 +52,7 @@ h5{
 
 .special_image{
 
-  padding-top:20%;
+  padding-top:30%;
 }
 
 .button {
@@ -74,15 +76,13 @@ h5{
 
   }
 
-* {
-
-  margin: 0;
-
-  padding: 0;
-
-  box-sizing: border-box;
-
-}
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
 
 
 a {
