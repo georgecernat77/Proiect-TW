@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="casa_reptilelor.css", rel="stylesheet">
+<link href="nav_bar.css", rel="stylesheet">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+</style>
+</head>
+<body>
+
+  <body>
+    <nav>
+        <div class="navbar">
+          <i class='bx bx-menu'></i>
+          <div class="logo"><a href="#">Zoo Web Manager</a></div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name">Zoo Web Manager</span>
+              <i class='bx bx-x' ></i>
+            </div>
+            <ul class="links">
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ANIMALS</a></li>
+              <li>
+                <a href="#">ATTRACTIONS</a>
+                <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
+                <ul class="htmlCss-sub-menu sub-menu">
+                  <li><a href="#">HALLS OF THE DEPTHS</a></li>
+                  <li><a href="#">REPTILE HOUSE</a></li>
+                  <li><a href="#">PLAYGROUND</a></li>
+                </ul>
+              </li>
+              <li><a href="#">BUY TICKET</a></li>
+              <li><a href="#">ABOUT US</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <script src="nav_bar.js"></script>
+
+    <div class="continut">
+
+      <div class="div1">
+          <H1 class="title">
+              Reptile House
+          </H1>
+      </div>
+    <H1 class="description">   Description   </H1>
+
+      <div class="continut_descriere">
+        <p class="paragraf">Reptile House has been advancing understanding of the natural world for nearly one-hundred years. Today we are working with species under threat from extinction from around the world, from Philippine crocodiles and Chinese Giant salamanders, we have something for every reptile, arthropod and amphibian lover.  </p>
+      </div>
+      
+    <H1 class="animalute">What you can see:</H1>
+
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+
+    <img src="background image/crocodil.jpg" class="image">
+    <div class="text"><a href="..\animale\Animale.html" class="descriere_animal">crocodile</a></div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="background image/tarantula.jpg" class="image">
+    <div class="text"><a href="..\animale\Animale.html" class="descriere_animal">Tarantula</a></div>
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span>  
+</div>
+
+<script src="slideshow.js"></script>
+
+</body>
+</html> 
