@@ -171,22 +171,6 @@ input[type="submit"]:hover {
       flex-direction: column;
       justify-content: center;
     }
-    .sidebar {
-      background: white;
-      padding: 0 ;
-      width: 90%; /* Set the width to 100% */
-      margin: 0 5%; /* Remove any margin */
-      text-align: center;
-      border-radius: 5px;
-      margin-top: 20%;
-    }
-    .sidebar-links li {
-      margin-bottom: 5%;
-    }
-    .appointments-box{
-      margin-left:5%;
-      margin-right:5%;
-    }
     .visit-image {
       margin-top:12%;
     } 
