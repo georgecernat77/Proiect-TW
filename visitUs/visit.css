@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  background: linear-gradient(135deg, #d6cda5, #8a7622);
+  height: 100%;
+}
+
+.main-title{
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 8%;
+  font-size: 2.5rem;
+}
+.container{
+  max-width: 900px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.container .title {
+  font-size: 30px;
+  margin-top: 3%;
+  margin-bottom: 7%;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+}
+
+.container .title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8px;
+  height: 3px;
+  width: 300px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #d6cda5, #8a7622);
+}
+
+
+.error-message{
+    color:#af4242;
+    background-color: #fde8ec;
+    padding: 10px;
+    display: none;
+    margin: 20px 5%;
+    margin-top:5%;
+    margin-bottom: 5%;
+    font-size: 18px;
+    text-align:center;
+  }
+  
+  
+  .main{
+    display: flex;
+    margin-bottom: 10%;
+    /* justify-content: center; */
+  }
+
+  .visit-image img{
+    width: 100%;
+  }
+  .container {
+    max-width: 700px;
+
+    margin-top:5%;
+    margin-left:5%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="date"],
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 95%; /* Set the width to 100% */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+input[type="submit"] {
+  padding: 12px; 
+  width: 95%;
+  font-size: 16px; /* Increase the font size */
+  background-color: #6a8a22;;
+  color: #fff;
+  border: none;
+  border-radius: 6px; /* Increase the border radius */
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  display: block;
+}
+
+
+
+input[type="submit"]:hover {
+    background-color: #88ab35;;
+}
+/* .container {
+  display: flex;
+} */
+
+.description {
+  flex: 1;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+
+.description-title {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 10px;
+  background-color: #6a8a22;
+  color: whitesmoke;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.description-img-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.description img {
+  width: 400px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+  justify-content: center;
+}
+
+.description-text {
+  font-size: 16px;
+  line-height: 1.5;
+  
+}
+  @media(min-width: 650px){
+    .visit-image{
+    margin-top: 6%;
+    }
+}
+  @media(max-width: 650px){
+    .main{
+      flex-direction: column;
+      justify-content: center;
+    }
+    .sidebar {
+      background: white;
+      padding: 0 ;
+      width: 90%; /* Set the width to 100% */
+      margin: 0 5%; /* Remove any margin */
+      text-align: center;
+      border-radius: 5px;
+      margin-top: 20%;
+    }
+    .sidebar-links li {
+      margin-bottom: 5%;
+    }
+    .appointments-box{
+      margin-left:5%;
+      margin-right:5%;
+    }
+    .visit-image {
+      margin-top:12%;
+    } 
+  }
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+  .visit-image {
+    margin-top:13%;
+  }  
+}
+  @media(max-width: 459px){
+  .container .content .category{
+    flex-direction: column;
+  }
+  .register-form{
+    margin-top:20%;
+  }
+  .visit-image {
+    margin-top:18%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .description {
+    order: -1;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .description img {
+    max-width: 80%;
+    height: auto;
+    margin-top:10%;
+    margin-bottom: 10%;
+  }
+  .main-title{
+    margin-bottom: 10%;
+  }
+  .description-text{
+    margin-bottom: 10%;
+  }
+}
