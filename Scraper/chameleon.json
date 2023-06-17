@@ -1,0 +1,43 @@
+{
+   "visible": [
+      1
+   ],
+   "name": [
+      "chameleon"
+   ],
+   "location": [
+      "Africa",
+      "Asia",
+      "Madagascar",
+      "India",
+      "Sri Lanka"
+   ],
+   "diet": [
+      "locusts, mantids, grasshoppers, crickets"
+   ],
+   "longevity": [
+      "5 - 10 years"
+   ],
+   "description": [
+      "chameleon,  (family Chamaeleonidae),  any of a group of primarily arboreal (tree-dwelling) Old World lizards best known for their ability to change body colour. Other characteristics of chameleons include zygodactylous feet (with toes fused into opposed bundles of two and three), acrodont dentition (with the teeth attached to the edge of the jaw), eyes that move independently, atrophied venom glands that produce harmless trace amounts of venom, and a long, slender projectile tongue. The name has also been applied to the false chameleon, or anole, a New World lizard of the genus Anolis (family Iguanidae).",
+      "Four genera of true chameleons have been described: Bradypodion, Brookesia, Chamaeleo, and Rhampholeon. Two additional genera (Calumma and Furcifer) are recognized by some researchers. More than 150 species are currently known, and additional ones remain to be named. About half of the species occur only in Madagascar, whereas others occur mostly in sub-Saharan Africa. Two species occur in Asia; one is native to southern India and Sri Lanka (Chamaeleo zeylanicus), and the other (the European chameleon, C. chamaeleon) is found from the Middle East to southern Spain. The most familiar chameleons belong to the genus Chamaeleo, and these have prehensile tails that wrap in a coil-like fashion around limbs to maintain balance. In contrast, most species of pigmy chameleons in the genera Brookesia (Madagascar) and Rhampholeon (Africa) have short stubby tails that are not prehensile; however, pigmy chameleons in Bradypodion have longer tails that are prehensile.",
+      "The longest chameleon in the world is Parson\u2019s chameleon (Calumma parsonii), which may grow up to 69.5 cm (about 27 inches) long. On the other hand, the world\u2019s shortest chameleon, the male nano-chameleon (Brookesia nana), can be as small as 21.6 mm (about 0.9 inch) long. Most chameleons, however, are 17\u201325 cm (7\u201310 inches) long. The body is laterally compressed, the tail is sometimes curled, and the bulged eyes move independently of one another. Also, some chameleons possess helmet-shaped heads."
+   ],
+   "type": [
+      "reptile"
+   ],
+   "scientificName": [
+      "Chamaeleonidae"
+   ],
+   "habitat": [
+      "rainforests",
+      "semi-dessert"
+   ],
+   "related": [],
+   "endangered": [
+      0
+   ],
+   "eatingHabit": [
+      "carnivorous"
+   ]
+}
