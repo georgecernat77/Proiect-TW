@@ -1,0 +1,16 @@
+{
+   "visible": 1,
+   "name": "rhinoceros",
+   "id": "id",
+   "diet": "grass",
+   "longevity": "35-50 years",
+   "location": [
+      "Asia"
+   ],
+   "description": "rhinoceros,  (family Rhinocerotidae), plural rhinoceroses, rhinoceros, or rhinoceri,  any of five or six species of giant horn-bearing herbivores that include some of the largest living land mammals. Only African and Asian elephants are taller at the shoulder than the two largest rhinoceros species\u2014the white, or square-lipped, rhinoceros (Ceratotherium simum), which some divide into two species (northern white rhinoceros [C. cottoni] and southern white rhinoceros [C. simum]), and the Indian, or greater one-horned, rhinoceros (Rhinoceros unicornis). The white rhinoceros and the black rhinoceros (Diceros bicornis) live in Africa, while the Indian rhinoceros, the Javan rhinoceros (R. sondaicus), and the Sumatran rhinoceros (Dicerorhinus sumatrensis) live in Asia. The precarious state of the surviving species (all but one are endangered) is in direct contrast to the early history of this group as one of the most successful lineages of hoofed mammals. Today the total population of all the rhinoceros species combined is probably fewer than 30,000. Rhinoceroses today are restricted to eastern and southern Africa and to subtropical and tropical Asia.",
+   "related": [
+      "tigers"
+   ],
+   "endangered": 1,
+   "eatingHabit": "herbivorous"
+}

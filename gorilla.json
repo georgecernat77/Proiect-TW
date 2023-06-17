@@ -1,0 +1,17 @@
+{
+   "visible": 1,
+   "name": "gorilla",
+   "id": "id",
+   "diet": "leaves, shoots, stems, roots, larvae, snails, barks, rotten wood",
+   "longevity": "35 \u2013 40 years",
+   "location": [
+      "Lake Kivu",
+      "Rwanda",
+      "Central African Republic",
+      "Democratic Republic of the Congo"
+   ],
+   "description": "gorilla,  (genus Gorilla),  genus of primates containing the largest of the apes. The gorilla is one of the closest living relatives to humans; both groups last shared a common ancestor about 10 million years ago. Only the chimpanzee and the bonobo are closer. Gorillas live only in tropical forests of equatorial Africa. Most authorities recognize two species and four subspecies. The western gorilla (Gorilla gorilla) is made up of two subspecies: the western lowland gorilla (G. gorilla gorilla), which inhabits the lowland rainforests from Cameroon to the Congo River, and the Cross River gorilla (G. gorilla diehli), which inhabits a small forested region along the Cross River separating Nigeria from Cameroon. The eastern gorilla (G. beringei) is also made up of two subspecies: the eastern lowland, or Grauer\u2019s, gorilla (G. beringei graueri), of the lowland rainforests of the eastern Democratic Republic of the Congo (Kinshasa), and the mountain gorilla (G. beringei beringei), found in the montane rainforests and bamboo forests of the highland terrain north and east of Lake Kivu, near the borders of Uganda, Rwanda, and Congo (Kinshasa).",
+   "related": [],
+   "endangered": 1,
+   "eatingHabit": "herbivorous"
+}
