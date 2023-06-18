@@ -17,7 +17,9 @@
    "type": [
       "mammal"
    ],
-   "scientificName": "Rhinocerotidae",
+   "scientificName": [
+      "Rhinocerotidae"
+   ],
    "habitat": [
       "savanna",
       "grassland"
@@ -33,5 +35,7 @@
    "endangered": [
       1
    ],
-   "eatingHabit": "herbivorous"
+   "eatingHabit": [
+      "herbivorous"
+   ]
 }

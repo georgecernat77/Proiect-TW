@@ -786,7 +786,7 @@ def scraping():
     if len(isEndangered)!=0:
         dictionary['endangered']=[1]
     
-    dictionary['eatingHabit']='carnivorous'
+    dictionary['eatingHabit']=['carnivorous']
 
     animal=json.dumps(dictionary,indent=3)
     with open(f'{name}.json', "w") as outfile:
@@ -959,7 +959,7 @@ def scraping():
     dictionary['location']=places
 
     dictionary['type']=[scraper.find('div',class_="topic-identifier font-16 font-md-20").text]
-    dictionary['scientificName']='Rhinocerotidae'
+    dictionary['scientificName']=['Rhinocerotidae']
 
 
     habitats=['savanna','grassland']
@@ -992,7 +992,7 @@ def scraping():
     if len(isEndangered)!=0:
         dictionary['endangered']=[1]
     
-    dictionary['eatingHabit']='herbivorous'
+    dictionary['eatingHabit']=['herbivorous']
 
     animal=json.dumps(dictionary,indent=3)
     with open(f'{name}.json', "w") as outfile:
