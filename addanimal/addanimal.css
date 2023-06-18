@@ -101,7 +101,7 @@ form .input-box span.details{
   font-weight: 500;
   margin-bottom: 5px;
 }
-.animal-details .input-box input{
+.animal-details .input-box input[type="text"] {
   height: 45px;
   width: 100%;
   outline: none;
@@ -112,6 +112,7 @@ form .input-box span.details{
   border-bottom-width: 2px;
   transition: all 0.3s ease;
 }
+
 .input-box.description textarea {
   width: 100%;
   outline: none;
