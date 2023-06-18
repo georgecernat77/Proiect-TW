@@ -85,7 +85,6 @@ def scraping():
     scraper=BeautifulSoup(site,'lxml')
 
     name=scraper.find('h1',class_='mt-20 mb-0').text
-    name=name.replace(' ','_')
     locationList=scraper.find_all('div', class_='accordion--answer-copy p-20 bg-gray-50')
 
     dictionary={}
@@ -162,7 +161,6 @@ def scraping():
     scraper=BeautifulSoup(site,'lxml')
 
     name=scraper.find('h1',class_='mt-20 mb-0').text
-    name=name.replace(' ','_')
 
     locationList=scraper.find_all('div', class_='accordion--answer-copy p-20 bg-gray-50')
 
@@ -262,7 +260,6 @@ def scraping():
     scraper=BeautifulSoup(site,'lxml')
 
     name=scraper.find('h1',class_='mt-20 mb-0').text
-    name=name.replace(' ','_')
 
     locationList=scraper.find_all('div', class_='accordion--answer-copy p-20 bg-gray-50')
 
@@ -337,7 +334,6 @@ def scraping():
     scraper=BeautifulSoup(site,'lxml')
 
     name=scraper.find('h1',class_='mt-20 mb-0').text
-    name=name.replace(' ','_')
 
     locationList=scraper.find_all('div', class_='accordion--answer-copy p-20 bg-gray-50')
 
@@ -413,7 +409,6 @@ def scraping():
     scraper=BeautifulSoup(site,'lxml')
 
     name=scraper.find('h1',class_='mt-20 mb-0').text
-    name=name.replace(' ','_')
 
     locationList=scraper.find_all('div', class_='accordion--answer-copy p-20 bg-gray-50')
 
@@ -483,7 +478,6 @@ def scraping():
     scraper=BeautifulSoup(site,'lxml')
 
     name=scraper.find('h1',class_='mt-20 mb-0').text
-    name=name.replace(' ','_')
 
     locationList=scraper.find_all('div', class_='accordion--answer-copy p-20 bg-gray-50')
 
@@ -544,7 +538,6 @@ def scraping():
     scraper=BeautifulSoup(site,'lxml')
 
     name=scraper.find('h1',class_='mt-20 mb-0').text
-    name=name.replace(' ','_')
 
     locationList=scraper.find_all('div', class_='accordion--answer-copy p-20 bg-gray-50')
 
@@ -606,7 +599,6 @@ def scraping():
     scraper=BeautifulSoup(site,'lxml')
 
     name=scraper.find('h1',class_='mt-20 mb-0').text
-    name=name.replace(' ','_')
 
     locationList=scraper.find_all('div', class_='accordion--answer-copy p-20 bg-gray-50')
 
@@ -668,7 +660,6 @@ def scraping():
     scraper=BeautifulSoup(site,'lxml')
 
     name=scraper.find('h1',class_='mt-20 mb-0').text
-    name=name.replace(' ','_')
 
     locationList=scraper.find_all('div', class_='accordion--answer-copy p-20 bg-gray-50')
 
@@ -730,7 +721,6 @@ def scraping():
     scraper=BeautifulSoup(site,'lxml')
 
     name=scraper.find('h1',class_='mt-20 mb-0').text
-    name=name.replace(' ','_')
 
     locationList=scraper.find_all('div', class_='accordion--answer-copy p-20 bg-gray-50')
 
@@ -797,7 +787,6 @@ def scraping():
     scraper=BeautifulSoup(site,'lxml')
 
     name=scraper.find('h1',class_='mt-20 mb-0').text
-    name=name.replace(' ','_')
 
     locationList=scraper.find_all('div', class_='accordion--answer-copy p-20 bg-gray-50')
 
@@ -873,7 +862,6 @@ def scraping():
     scraper=BeautifulSoup(site,'lxml')
 
     name=scraper.find('h1',class_='mt-20 mb-0').text
-    name=name.replace(' ','_')
 
     locationList=scraper.find_all('div', class_='accordion--answer-copy p-20 bg-gray-50')
 
@@ -942,7 +930,6 @@ def scraping():
     scraper=BeautifulSoup(site,'lxml')
 
     name=scraper.find('h1',class_='mt-20 mb-0').text
-    name=name.replace(' ','_')
 
     locationList=scraper.find_all('div', class_='accordion--answer-copy p-20 bg-gray-50')
 
@@ -1002,7 +989,6 @@ def scraping():
     scraper=BeautifulSoup(site,'lxml')
 
     name=scraper.find('h1',class_='mt-20 mb-0').text
-    name=name.replace(' ','_')
 
     locationList=scraper.find_all('div', class_='accordion--answer-copy p-20 bg-gray-50')
 
