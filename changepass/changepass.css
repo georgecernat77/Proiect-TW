@@ -192,7 +192,9 @@ form .input-box span.details{
     align-items: center;
     width: 100%;
   }
-  
+  li a.admin-option {
+    display: none;
+  }
   .sidebar-links a:hover {
     background-color: #ccc;
   }

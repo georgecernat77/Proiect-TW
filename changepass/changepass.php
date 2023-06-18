@@ -1,5 +1,5 @@
 <?php
-require_once('session.php');
+require_once('../session/session.php');
 ?>
 
 <!DOCTYPE html>
@@ -9,50 +9,43 @@ require_once('session.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./changepass.css">
-    <link rel="stylesheet" href="nav_bar.css">
-    <script defer src="./sidebar.js"></script>
-    <script defer src="./checkvalidPass.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="changepass.css">
+    <link rel="stylesheet" href="../navbar/nav_bar.css">
+    <script defer src="../sidebar/sidebar.js"></script>
+    <script defer src="checkvalidPass.js"></script>
+    <title>ZooConnect</title>
 </head>
 <body>
-    <nav>
+<nav>
         <div class="navbar">
             <i class='bx bx-menu'></i>
-            <div class="logo"><a href="#">Zoo Web Manager</a></div>
+            <div class="logo"><a href="../index/index.php">ZooConnect</a></div>
             <div class="nav-links">
                 <div class="sidebar-logo">
-                    <span class="logo-name">Zoo Web Manager</span>
+                    <span class="logo-name">ZooConnect</span>
                     <i class='bx bx-x'></i>
                 </div>
                 <ul class="links">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ANIMALS</a></li>
-                    <li>
-                        <a href="#">ATTRACTIONS</a>
-                        <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
-                        <ul class="htmlCss-sub-menu sub-menu">
-                            <li><a href="#">HALLS OF THE DEPTHS</a></li>
-                            <li><a href="#">REPTILE HOUSE</a></li>
-                            <li><a href="#">PLAYGROUND</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./visit.php">VISIT US</a></li>
-                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="../index/index.php">HOME</a></li>
+                    <li><a href="../animals/animals.php">ANIMALS</a></li>
+                    <li><a href="../myaccount/myaccount.php">MY ACCOUNT</a></li>
+                    <li><a href="../visitUs/visit.php">VISIT US</a></li>
+                    <li><a href="../about/about.php">ABOUT US</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <script src="nav_bar.js"></script>
+    <script src="../navbar/nav_bar.js"></script>
     <div class="main">
         <div class="sidebar">
             <img src="" alt="Image">
             <div class="acc-type"><?php echo $_SESSION['accounttype']; ?></div>
             <div class="welcome-message"><?php echo $_SESSION['firstname'] . " " . $_SESSION['lastname'];?></div>
             <ul class="sidebar-links">
-                <li><a href="./index.php">Account Details</a></li>
-                <li><a href="#" class = "active">Change Password</a></li>
-                <li><a href="logout.php">Log out</a></li>
+                <li><a href="../myaccount/myaccount.php">Account Details</a></li>
+                <li><a href="../changepass/changepass.php" class="active">Change Password</a></li>
+                <li><a href="../addanimal/addanimal.php" class="admin-option">Add/Remove Animal</a></li>
+                <li><a href="../logout/logout.php">Log out</a></li>
             </ul>
         </div>
         <div class="content-wrapper">
