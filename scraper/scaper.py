@@ -326,7 +326,7 @@ def scraping():
     if len(isEndangered)!=0:
         dictionary['endangered']=[1]
     
-    dictionary['eatingHabit']='carnivorous'
+    dictionary['eatingHabit']=['carnivorous']
 
     animal=json.dumps(dictionary,indent=3)
     with open(f'{name}.json', "w") as outfile:

@@ -40,5 +40,7 @@
    "endangered": [
       1
    ],
-   "eatingHabit": "carnivorous"
+   "eatingHabit": [
+      "carnivorous"
+   ]
 }
