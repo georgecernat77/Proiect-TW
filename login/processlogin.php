@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('config.php');
+require_once('../config/config.php');
 // Retrieve the JSON data from the request body
 $jsonData = file_get_contents('php://input');
 

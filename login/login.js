@@ -53,7 +53,7 @@ function checkMatch(event) {
                             errorElement.style.color = 'white';
                             errorElement.style.backgroundColor = '#53A653';
                             setTimeout(function() {
-                                window.location.href = "index.php";
+                                window.location.href = "../myaccount/myaccount.php";
                             }, 1000);
                         } else if (status === 'error') {
                             errorElement.textContent = message;

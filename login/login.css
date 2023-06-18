@@ -49,16 +49,7 @@ body{
     margin-top:5%;
     
 }
-form .input-box span.forgot-pass a {
-    color: #d6cda5;
-    text-decoration: none;
-}
 
-form .input-box span.forgot-pass a:hover {
-    color:#8a7622; 
-    text-decoration:none; 
-    cursor:pointer;  
-}
 
 .content form .register-box a {
     color: #d6cda5;
@@ -88,11 +79,7 @@ form span.register-text{
     margin-top:6%;
     
 }
-form .input-box span.forgot-pass{
-    display: block;
-    float:right;
-    margin-top: 3%;
-}
+
 .user-details .input-box input{
   height: 45px;
   width: 100%;

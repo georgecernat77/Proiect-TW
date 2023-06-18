@@ -1,49 +1,40 @@
 <?php
 session_start();
 if(isset($_SESSION["user"]))
-    header("Location: index.php");
-require_once('config.php');
+    header("Location: ../myaccount/myaccount.php");
+require_once('../config/config.php');
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <title> Log In </title>
+    <title>ZooConnect</title>
     <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="nav_bar.css">
+    <link rel="stylesheet" href="../navbar/nav_bar.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script defer src="./login.js"></script>
+     <script defer src="login.js"></script>
    </head>
 <body>
-    <nav>
+<nav>
         <div class="navbar">
-          <i class='bx bx-menu'></i>
-          <div class="logo"><a href="#">Zoo Web Manager</a></div>
-          <div class="nav-links">
-            <div class="sidebar-logo">
-              <span class="logo-name">Zoo Web Manager</span>
-              <i class='bx bx-x' ></i>
-            </div>
-            <ul class="links">
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">ANIMALS</a></li>
-              <li>
-                <a href="#">ATTRACTIONS</a>
-                <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
-                <ul class="htmlCss-sub-menu sub-menu">
-                  <li><a href="#">HALLS OF THE DEPTHS</a></li>
-                  <li><a href="#">REPTILE HOUSE</a></li>
-                  <li><a href="#">PLAYGROUND</a></li>
+            <i class='bx bx-menu'></i>
+            <div class="logo"><a href="../index/index.php">ZooConnect</a></div>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <span class="logo-name">ZooConnect</span>
+                    <i class='bx bx-x'></i>
+                </div>
+                <ul class="links">
+                    <li><a href="../index/index.php">HOME</a></li>
+                    <li><a href="../animals/animals.php">ANIMALS</a></li>
+                    <li><a href="../visitUs/visit.php">VISIT US</a></li>
+                    <li><a href="../about/about.php">ABOUT US</a></li>
                 </ul>
-              </li>
-              <li><a href="#">BUY TICKET</a></li>
-              <li><a href="#">ABOUT US</a></li>
-            </ul>
-          </div>
+            </div>
         </div>
     </nav>
-    <script src="nav_bar.js"></script>
+    <script src="../navbar/nav_bar.js"></script>
     <div class = "register-form">
         <div class="container">
         <div class="title">Welcome back</div>
@@ -61,14 +52,13 @@ require_once('config.php');
                 <div class="input-box">
                 <span class="details">Password</span>
                 <input type="password" placeholder="Enter your password"  id="password" name="pass" required>
-                <span class="forgot-pass"><a href = "./forgot-pass.html">Forgot Password?</span>
                 </div>
             </div>
             <div class="button">
                 <input type="submit" id="login" name="login" value="Log In">
             </div>
             <div class = "register-box">
-            <span class="register-text"><a href = "register.php">Don't have an account?</a></span>
+            <span class="register-text"><a href = "../register/register.php">Don't have an account?</a></span>
             </div>
             </form>
         </div>
