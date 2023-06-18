@@ -1,6 +1,5 @@
 <?php
-require_once('session.php');
-require_once('config.php');
+require_once('../session/session.php');
 ?>
 
 <!DOCTYPE html>
@@ -11,41 +10,33 @@ require_once('config.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="visit.css">
-    <link rel="stylesheet" href="nav_bar.css">
+    <link rel="stylesheet" href="../navbar/nav_bar.css">
     <script defer src="./visit.js"></script>
-    <title>Document</title>
+    <title>ZooConnect</title>
 </head>
 <body>
     <nav>
         <div class="navbar">
             <i class='bx bx-menu'></i>
-            <div class="logo"><a href="#">Zoo Web Manager</a></div>
+            <div class="logo"><a href="../index/index.php">ZooConnect</a></div>
             <div class="nav-links">
                 <div class="sidebar-logo">
-                    <span class="logo-name">Zoo Web Manager</span>
+                    <span class="logo-name">ZooConnect</span>
                     <i class='bx bx-x'></i>
                 </div>
                 <ul class="links">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ANIMALS</a></li>
-                    <li>
-                        <a href="#">ATTRACTIONS</a>
-                        <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
-                        <ul class="htmlCss-sub-menu sub-menu">
-                            <li><a href="#">HALLS OF THE DEPTHS</a></li>
-                            <li><a href="#">REPTILE HOUSE</a></li>
-                            <li><a href="#">PLAYGROUND</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">BUY TICKET</a></li>
-                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="../index/index.php">HOME</a></li>
+                    <li><a href="../animals/animals.php">ANIMALS</a></li>
+                    <li><a href="../myaccount/myaccount.php">MY ACCOUNT</a></li>
+                    <li><a href="../visitUs/visit.php">VISIT US</a></li>
+                    <li><a href="../about/about.php">ABOUT US</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <script src="nav_bar.js"></script>
+    <script src="../navbar/nav_bar.js"></script>
     <div class="visit-image">
-        <img src="./visitimage.png" alt="image">
+        <img src="visitimage.png" alt="image">
     </div>
     <h1 class="main-title">Discover Our Attractions</h1>
     <div class="main">
@@ -94,7 +85,7 @@ require_once('config.php');
     <div class="description">
             <h2 class="description-title">A New Adventure Awaits!</h2>
             <div class="description-img-text">
-            <img src="./5a35adb34d8136.5167970715134673153175.png" alt="img">
+            <img src="leu-visit.png" alt="img">
             <p class="description-text">
             Our zoo garden is the perfect place where you can find animals that you've never seen before and create new experiences.
             You can book your visit from this page if you choose to spend some time by visting our main attractions, including Reptile House, Halls of the Depths and the Playground.

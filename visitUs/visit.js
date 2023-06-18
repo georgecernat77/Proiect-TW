@@ -81,7 +81,7 @@ function updateAvailableTimes() {
 
     // Add available times based on the selected date
     if (selectedDate.toDateString() === currentDate.toDateString()) {
-        var currentHour = Math.max(currentDate.getHours(), 9); // Start from 9 AM
+        var currentHour = Math.max(currentDate.getHours() + 1, 9); // Start from 9 AM
 
         // Add times starting from the current hour
         for (var i = currentHour; i <= 17; i++) {
