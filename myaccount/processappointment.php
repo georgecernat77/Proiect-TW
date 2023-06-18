@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('config.php');
+require_once('../config/config.php');
 
 $email = $_SESSION["user"];
 $sql = "SELECT * FROM userappointments WHERE email = '$email'";

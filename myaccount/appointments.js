@@ -14,7 +14,6 @@ xhr.onload = function () {
     console.log(xhr.response);
     // Get the table body element
     var tableBody = document.getElementById('appointments-table-body');
-
     if (appointments.length === 0) {
       tableBody.innerHTML = 'No appointments made';
       tableBody.style.fontSize = '1.5rem';
