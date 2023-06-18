@@ -14,30 +14,21 @@ require_once('checkadmin.php');
     <script defer src="../sidebar/sidebar.js"></script>
     <script defer src="addanimal.js"></script>
     <script defer src="removeanimal.js"></script>
-    <title>Document</title>
+    <title>ZooConnect</title>
 </head>
 <body>
-    <nav>
+<nav>
         <div class="navbar">
             <i class='bx bx-menu'></i>
-            <div class="logo"><a href="#">ZooConnect</a></div>
+            <div class="logo"><a href="../index/index.php">ZooConnect</a></div>
             <div class="nav-links">
                 <div class="sidebar-logo">
                     <span class="logo-name">ZooConnect</span>
                     <i class='bx bx-x'></i>
                 </div>
                 <ul class="links">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ANIMALS</a></li>
-                    <li>
-                        <a href="#">ATTRACTIONS</a>
-                        <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
-                        <ul class="htmlCss-sub-menu sub-menu">
-                            <li><a href="#">HALLS OF THE DEPTHS</a></li>
-                            <li><a href="#">REPTILE HOUSE</a></li>
-                            <li><a href="#">PLAYGROUND</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="../index/index.php">HOME</a></li>
+                    <li><a href="../animals/animals.php">ANIMALS</a></li>
                     <li><a href="../myaccount/myaccount.php">MY ACCOUNT</a></li>
                     <li><a href="../visitUs/visit.php">VISIT US</a></li>
                     <li><a href="../about/about.php">ABOUT US</a></li>
