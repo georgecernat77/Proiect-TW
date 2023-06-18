@@ -1,114 +1,391 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scholarly</title>
-</head>
-<body>
-    <div class = "top-area">
-        <h1>Zoo Web Manager Documentation</h1>
-        <p><b>Authors: </b>Cernat George Lucian, Bors Andrei Darius, Popa Ioana</p>
-        <p><b>Github: </b> <a href>https://github.com/georgecernat77/Proiect-TW</a></p>
-       
-    </div>
-    <div class ="Contents">
-        <h1><b>Table Of Contents</b></h1>
-        <ul>
-            <li>1. Abstract</li>
-            <li>2. Introduction</li>
-            <li>3. Structure
-                <ul>
-                    <li>3.1 About</li>
-                    <li>3.2 Log In</li>
-                    <li>3.3 Sign In</li>
-                    <li>3.4 My account</li>
-                    <li>3.5 Change password</li>
-                    <li>3.6 Animals</li>
-                    <ul>
-                        <li>3.6.1 Animal</li>
-                    </ul>
-                    <li>3.7 Attractions</li>
-                    <ul>
-                        <li>3.7.1 Reptile House</li>
-                        <li>3.7.2 Halls of the Depths</li>
-                        <li>3.7.3 Playground</li>
-                    </ul>
-                    <li>3.8 Buy Ticket</li>
-                </ul>
-            <li>4. Navigate</li>
-            <li>5. Refferences</li>
-        </ul>
-    </div>
-    <div class="Abstract">
-        <h2><b>1. Abstract</b></h2>
-        <p>Zoo Web Manager is a web application intended to manage information related to a zoo garden. </p>
-    </div>
-    <div class="Introduction">
-        <h2><b>2. Introduction</b></h2>
-        <p>The purpose of this web application is to facilitate the management of animals in a zoo. Through it, users can search for animals using different filters provided by the developers.</p>
-    </div>
-    <div class="Structure">
-        <h2><b>3. Structure</b></h2>
-        <p>The architecture of this web application is based on multiple pages that are easy to navigate and use by a regular user: My Account, Animals, Log In, Sign Up, Buy Ticket, About.</p>
-        <h3><b>3.1 About (pagina_about.html)</b></h3>
-        <p>This is the main page of the application. After the user logs in, this is the first page that introduces him to our website.</p>
-        <p>Author: Cernat George Lucian</p>
-        <h3><b>3.2 Log In (index.html)</b></h3>
-        <p>A page where the users can log in their accounts(they can be visitors or zoo staff(not implemented)).</p>
-        <p>Author: Popa Ioana</p>
-        <h3><b>3.3 Sign In (SignIn.html)</b></h3>
-        <p>This is the page a visitor can create a user account, or a zoo staf account.</p>
-        <p>Author: Popa Ioana</p>
-        <h3><b>3.4 My account(pagina_my_account.html)</b></h3>
-        <p>This is the page where the user can check the details about his account, change his password or log out.</p>
-        <p>Author: Cernat George Lucian</p>
-        <h3><b>3.5 Change Password (pagina_change_password.html)</b></h3>
-        <p>This is the page where a user that is logged in can change his password.</p>
-        <p>Author: Cernat George Lucian</p>
-        <h3><b>3.6 Animals (pagina_animals.html)</b></h3>
-        <p>This is the page where a user can search and discover different species of animals, searching them using the filters.</p>
-        <p>Author: Cernat George Lucian</p>
-        <h3><b>3.6.1 Animal (animale.html)</b></h3>
-        <p>A page that gives specific information about a certain animal (in our case the lion).</p>
-        <p>Author: Bors Andrei Darius</p>
-        <h3><b>3.7.1. Reptile House (casa_reptilelor.html)</b></h3>
-        <p>A page for the zoo's house of reptiles, builded to give the user the sensation that he/she is an underground reptilian den.</p>
-        <p>Author: Bors Andrei Darius</p>
-        <h3><b>3.7.2. Halls Of the Depths (hallofthedeapths.html)</b></h3>
-        <p>A page for the zoo's aquarium, builded to give the sensation for he user that he/she is in the sea.</p>
-        <p>Author: Bors Andrei Darius</p>
-        <h3><b>3.7.3. Playground (PlayGround.html)</b></h3>
-        <p>A page made to inform the users about the zoo's playground, as well as the animals that the kids may play with.</p>
-        <p>Author: Bors Andrei Darius</p>
-        <h3><b>3.8 Buy Ticket (pagina_day_ticket.html,pagina_monthly_pass.html)</b></h3>
-        <p>This pages are designed to help the user in buying tickets easily online.</p> 
-        <p>Author: Cernat George Lucian</p>
-    </div>
-    <div class="Navigate">
-        <h2>4. Navigate</h2>
-        <p>As a user you can easily log in, or create an account if you don't have one. After you log in you are welcomed by the 
-            about page which is the main page of the web application. Using the top navigation bar you can navigate through different pages and functionalities, like discovering the uknown things about animals by using the filter, buy tickets, see the main attractions and manage your account profile.</p>
 
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="author" content="Cernat George Lucian">
+    <meta name="author" content="Bors Andrei Darius">
+    <meta name="author" content="Popa Ioana">
+    <title> Scholarly.Html </title>
+    <link rel="stylesheet" href="scholarly.min.css">
+
+</head>
+
+<body prefix="schema: http://schema.org">
+    <header>
+        <h1> Zoo Web Manager </h1>
+    </header>
+    <section class="chapters">
+        <ol>
+            <li>
+                <a href="#chapter1"> Introduction </a>
+                <ol>
+                    <li> <a href="#chapter1_1"> Purpose  </a> </li>
+                    <li> <a href="#chapter1_2"> Document Conventions </a> </li>
+                    <li> <a href="#chapter1_3"> Intended Audience and Reading Suggestions </a> </li>
+                    <li> <a href="#chapter1_4"> Product Scope </a> </li>
+                    <li> <a href="#chapter1_5"> References </a> </li>
+                </ol>
+            </li>
+            <li> <a href="#chapter2">  Overall Description </a>
+                <ol>
+                    <li> <a href="#chapter2_1"> Product Perspective </a> </li>
+                    <li> <a href="#chapter2_2"> Product Functions </a> </li>
+                    <li> <a href="#chapter2_3"> User Classes and Characteristics </a> </li>
+                    <li> <a href="#chapter2_4"> Operating Environment </a> </li>
+                    <li> <a href="#chapter2_5"> Design and Implementation Constraints </a> </li>
+                    <li> <a href="#chapter2_6"> User Documentation </a> </li>
+                    <li> <a href="#chapter2_7"> Assumptions and Dependencies </a> </li>
+                </ol>
+            </li>
+            <li> <a href="#chapter3"> External Interface Requirements </a>
+                <ol>
+                    <li> <a href="#chapter3_1"> User Interfaces </a> </li>
+                    <li> <a href="#chapter3_2"> Hardware Interfaces </a></li>
+                    <li> <a href="#chapter3_3"> Software Interfaces </a> </li>
+                </ol>
+            </li>
+            <li><a href="#chapter4">  System Features </a>
+                <ol>
+                    <li> <a href="#chapter4_1"> Register  </a> </li>
+                    <li> <a href="#chapter4_2"> Autentification </a> </li>
+                    <li> <a href="#chapter4_3"> Deconnect </a> </li>
+                    <li> <a href="#chapter4_4"> Change Password </a> </li>
+                    <li> <a href="#chapter4_5"> Add Animals </a> </li>
+                    <li> <a href="#chapter4_6"> Remove animals   </a> </li>
+                    <li> <a href="#chapter4_7"> Account validation </a> </li>
+                    <li> <a href="#chapter4_8"> Create appointments </a> </li>
+                    <li> <a href="#chapter4_9"> Searching for an animal by filters  </a> </li>
+                    <li> <a href="#chapter4_10"> User Session  </a> </li>
+                </ol>
+            </li>
+            
+        </ol>
+    </section>
+    <div role="contentinfo">
+        <dl>
+            <dt>Authors</dt>
+            <dd>
+                Cernat George Lucian
+            </dd>
+            <dd>
+                Bors Andrei Darius
+            </dd>
+            <dd>
+                Popa Ioana
+            </dd>
+        </dl>
     </div>
-    <div class="Refferences">
-        <h2>5. Refferences</h2>
-        <p>In the process of designing this project we used the images linked down below, in order to provide the best experience for the user:</p>
-        <ul>
-            <li><a href>https://www.google.com/search?q=leu&rlz=1C1HSTG_enRO926RO926&sxsrf=APwXEdeYEeHLzIFeD-e4vlE5pG3rU8CHyg:1681074535999&tbm=isch&source=iu&ictx=1&vet=1&fir=BAYlAjshX2BERM%252CKMhZ5RzoipbmUM%252C_%253B1PQYgG6El340jM%252CWOBeCM4kTAOFzM%252C_%253Bq6nx4qOR4p8aRM%252C5RTrjOIYmwx2jM%252C_&usg=AI4_-kSWwiG7G5vsg1KtqqGWOMuec-nzgw&sa=X&ved=2ahUKEwiG-7vU2p3-AhVvBxAIHYEaCCQQ_h16BAhdEAE#imgrc=q6nx4qOR4p8aRM</a></li>
-            <li><a href>https://ro.wikipedia.org/wiki/Leu#/media/Fi%C8%99ier:Lion_distribution.png</a></li>
-            <li><a href>https://www.reptiles.swelluk.com/giant-white-knee-tarantula-acanthoscurria-geniculata</a></li>
-            <li><a href>https://www.balisafarimarinepark.com/crocodile-morphology/</a></li>
-            <li><a href>https://www.msaquarium.org/p/animals/animal-guide/bottlenose-dolphins</a></li>
-            <li><a href>https://www.adelaidezoo.com.au/visitor-information/natures-playground/</a></li>
-            <li><a href>https://www.google.com/search?q=kids+playing+with+domestic+animals&tbm=isch&ved=2ahUKEwjl1b-z3J3-AhULwgIHHRhwATAQ2-cCegQIABAA&oq=kids+playing+with+domestic+animals&gs_lcp=CgNpbWcQAzIECCMQJzoFCAAQgAQ6BggAEAgQHjoICAAQCBAHEB5QoghYjxNguRZoAHAAeACAAVyIAfEFkgECMTCYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=OyszZKXMK4uEi-gPmOCFgAM&bih=754&biw=1536&rlz=1C1HSTG_enRO926RO926#imgrc=bZi2_BthbSSsIM</a></li>
-            <li><a href>https://www.google.com/search?q=kids+playing+with+domestic+animals&tbm=isch&ved=2ahUKEwjl1b-z3J3-AhULwgIHHRhwATAQ2-cCegQIABAA&oq=kids+playing+with+domestic+animals&gs_lcp=CgNpbWcQAzIECCMQJzoFCAAQgAQ6BggAEAgQHjoICAAQCBAHEB5QoghYjxNguRZoAHAAeACAAVyIAfEFkgECMTCYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=OyszZKXMK4uEi-gPmOCFgAM&bih=754&biw=1536&rlz=1C1HSTG_enRO926RO926#imgrc=DCB1OkmuQAJxtM</a></li>
-            <li><a href>https://seaworld.org/animals/all-about/beluga-whales/</li>
-            <li><a href>https://www.google.com/search?q=zoo+images&tbm=isch&ved=2ahUKEwjx8-OFk53-AhWNiP0HHRMzCmkQ2-cCegQIABAA&oq=zoo+images&gs_lcp=CgNpbWcQAzIECCMQJzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQE1DEEFjEEGCyEWgAcAB4AIABXYgBtQGSAQEymAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=UN4yZPGLA42R9u8Pk-aoyAY&bih=722&biw=1536#imgrc=XpbTycoimwDdfM</a></li>
-            <li><a href>https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.wildlifesydney.com.au%2Fmedia%2Fl43b41ln%2Fimg_7103-benholgate.jpg&tbnid=JDRSSWIH8DvlQM&vet=10CNEBEDMoxAFqFwoTCODU0ImTnf4CFQAAAAAdAAAAABAo..i&imgrefurl=https%3A%2F%2Fwww.wildlifesydney.com.au%2F&docid=4ZgpzNjg4PLxRM&w=4366&h=2911&q=zoo%20images&ved=0CNEBEDMoxAFqFwoTCODU0ImTnf4CFQAAAAAdAAAAABAo</a></li>
-            <li><a href>https://www.google.com/imgres?imgurl=https%3A%2F%2Freidparkzoo.org%2Fwp-content%2Fuploads%2F2018%2F10%2FVisittheZoo_ReidParkZoo.jpg&tbnid=0HYYSlAzAuab6M&vet=12ahUKEwiZqf-Ik53-AhWzg_0HHQ87ClkQMygWegUIARDrAQ..i&imgrefurl=https%3A%2F%2Freidparkzoo.org%2Fvisit%2Factivities%2F&docid=1v2pGV8njtmvGM&w=3500&h=1787&q=zoo%20images&ved=2ahUKEwiZqf-Ik53-AhWzg_0HHQ87ClkQMygWegUIARDrAQ</a></li>
-        </ul>
-    </div>
-</body>
-</html>
+    
+    <section id="chapter1">
+        <h2> 1. Introduction</h2>
+        <section id="chapter1_1">
+            <h3> 1.1 Purpose </h3>
+            <p>
+                The purpose of this website is to allow zoo staff to manage their animals as well potential users to view the zoo's animals and attraction
+
+            </p>
+        </section>
+        <section id="chapter1_2">
+            <h3> 1.2 Document conventions </h3>
+            <p>
+                The pages were made using HTML (for the structure), PHP (for sessions) , JavaScript (for functionalities such as input validation and AJAX), CSS (for style) and Python (for web data gathering)
+
+            </p>
+        </section>
+        <section id="chapter1_3">
+            <h3> 1.3 Intended Audience and Reading Suggestions </h3>
+            <p>
+                The website was designed mainly for zoo staff and visitors.
+
+            </p>
+        </section>
+        <section id="chapter1_4">
+            <h3> 1.4 Product Scope </h3>
+            <p>
+                The site allow the normal user to search for animals by certain criteria (location, type, eating habit etc), see the atractions that the zoo give at their disposal,
+                as well create or cancel appointments for those attractions. The admin user can add an animal or delete to the website, or not making it visible to the website.
+            </p>
+        </section>
+        <section id="chapter1_5">
+            <h3> 1.5 References </h3>
+            <p>
+                Link-uri :
+                <br> <a href="https://www.britannica.com"> https://www.britannica.com  </a>
+                <br> <a href="https://www.google.com/search?q=leu&rlz=1C1HSTG_enRO926RO926&sxsrf=APwXEdeYEeHLzIFeD-e4vlE5pG3rU8CHyg:1681074535999&tbm=isch&source=iu&ictx=1&vet=1&fir=BAYlAjshX2BERM%252CKMhZ5RzoipbmUM%252C_%253B1PQYgG6El340jM%252CWOBeCM4kTAOFzM%252C_%253Bq6nx4qOR4p8aRM%252C5RTrjOIYmwx2jM%252C_&usg=AI4_-kSWwiG7G5vsg1KtqqGWOMuec-nzgw&sa=X&ved=2ahUKEwiG-7vU2p3-AhVvBxAIHYEaCCQQ_h16BAhdEAE#imgrc=q6nx4qOR4p8aRM" > https://www.google.com/search?q=leu&rlz=1C1HSTG_enRO926RO926&sxsrf=APwXEdeYEeHLzIFeD-e4vlE5pG3rU8CHyg:1681074535999&tbm=isch&source=iu&ictx=1&vet=1&fir=BAYlAjshX2BERM%252CKMhZ5RzoipbmUM%252C_%253B1PQYgG6El340jM%252CWOBeCM4kTAOFzM%252C_%253Bq6nx4qOR4p8aRM%252C5RTrjOIYmwx2jM%252C_&usg=AI4_-kSWwiG7G5vsg1KtqqGWOMuec-nzgw&sa=X&ved=2ahUKEwiG-7vU2p3-AhVvBxAIHYEaCCQQ_h16BAhdEAE#imgrc=q6nx4qOR4p8aRM</a>
+                <br> <a href="https://ro.wikipedia.org/wiki/Leu#/media/Fi%C8%99ier:Lion_distribution.png"> https://ro.wikipedia.org/wiki/Leu#/media/Fi%C8%99ier:Lion_distribution.png</a>
+                <br> <a href="https://www.reptiles.swelluk.com/giant-white-knee-tarantula-acanthoscurria-geniculata"> https://www.reptiles.swelluk.com/giant-white-knee-tarantula-acanthoscurria-geniculata</a>
+                <br> <a href="https://www.balisafarimarinepark.com/crocodile-morphology/">https://www.balisafarimarinepark.com/crocodile-morphology/ </a>
+                <br> <a href="https://www.msaquarium.org/p/animals/animal-guide/bottlenose-dolphins">https://www.msaquarium.org/p/animals/animal-guide/bottlenose-dolphins</a>
+                <br> <a href="https://www.adelaidezoo.com.au/visitor-information/natures-playground/"> https://www.adelaidezoo.com.au/visitor-information/natures-playground/</a>
+                <br> <a href="https://www.google.com/search?q=kids+playing+with+domestic+animals&tbm=isch&ved=2ahUKEwjl1b-z3J3-AhULwgIHHRhwATAQ2-cCegQIABAA&oq=kids+playing+with+domestic+animals&gs_lcp=CgNpbWcQAzIECCMQJzoFCAAQgAQ6BggAEAgQHjoICAAQCBAHEB5QoghYjxNguRZoAHAAeACAAVyIAfEFkgECMTCYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=OyszZKXMK4uEi-gPmOCFgAM&bih=754&biw=1536&rlz=1C1HSTG_enRO926RO926#imgrc=bZi2_BthbSSsIM"> https://www.google.com/search?q=kids+playing+with+domestic+animals&tbm=isch&ved=2ahUKEwjl1b-z3J3-AhULwgIHHRhwATAQ2-cCegQIABAA&oq=kids+playing+with+domestic+animals&gs_lcp=CgNpbWcQAzIECCMQJzoFCAAQgAQ6BggAEAgQHjoICAAQCBAHEB5QoghYjxNguRZoAHAAeACAAVyIAfEFkgECMTCYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=OyszZKXMK4uEi-gPmOCFgAM&bih=754&biw=1536&rlz=1C1HSTG_enRO926RO926#imgrc=bZi2_BthbSSsIM</a>
+                <br> <a href="https://www.google.com/search?q=kids+playing+with+domestic+animals&tbm=isch&ved=2ahUKEwjl1b-z3J3-AhULwgIHHRhwATAQ2-cCegQIABAA&oq=kids+playing+with+domestic+animals&gs_lcp=CgNpbWcQAzIECCMQJzoFCAAQgAQ6BggAEAgQHjoICAAQCBAHEB5QoghYjxNguRZoAHAAeACAAVyIAfEFkgECMTCYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=OyszZKXMK4uEi-gPmOCFgAM&bih=754&biw=1536&rlz=1C1HSTG_enRO926RO926#imgrc=DCB1OkmuQAJxtM">https://www.google.com/search?q=kids+playing+with+domestic+animals&tbm=isch&ved=2ahUKEwjl1b-z3J3-AhULwgIHHRhwATAQ2-cCegQIABAA&oq=kids+playing+with+domestic+animals&gs_lcp=CgNpbWcQAzIECCMQJzoFCAAQgAQ6BggAEAgQHjoICAAQCBAHEB5QoghYjxNguRZoAHAAeACAAVyIAfEFkgECMTCYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=OyszZKXMK4uEi-gPmOCFgAM&bih=754&biw=1536&rlz=1C1HSTG_enRO926RO926#imgrc=DCB1OkmuQAJxtM</a>
+                <br> <a href="https://seaworld.org/animals/all-about/beluga-whales/">https://seaworld.org/animals/all-about/beluga-whales/</a>
+                <br> <a href="https://www.google.com/search?q=zoo+images&tbm=isch&ved=2ahUKEwjx8-OFk53-AhWNiP0HHRMzCmkQ2-cCegQIABAA&oq=zoo+images&gs_lcp=CgNpbWcQAzIECCMQJzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQE1DEEFjEEGCyEWgAcAB4AIABXYgBtQGSAQEymAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=UN4yZPGLA42R9u8Pk-aoyAY&bih=722&biw=1536#imgrc=XpbTycoimwDdfM">https://www.google.com/search?q=zoo+images&tbm=isch&ved=2ahUKEwjx8-OFk53-AhWNiP0HHRMzCmkQ2-cCegQIABAA&oq=zoo+images&gs_lcp=CgNpbWcQAzIECCMQJzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQE1DEEFjEEGCyEWgAcAB4AIABXYgBtQGSAQEymAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=UN4yZPGLA42R9u8Pk-aoyAY&bih=722&biw=1536#imgrc=XpbTycoimwDdfM</a>
+                <br> <a href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.wildlifesydney.com.au%2Fmedia%2Fl43b41ln%2Fimg_7103-benholgate.jpg&tbnid=JDRSSWIH8DvlQM&vet=10CNEBEDMoxAFqFwoTCODU0ImTnf4CFQAAAAAdAAAAABAo..i&imgrefurl=https%3A%2F%2Fwww.wildlifesydney.com.au%2F&docid=4ZgpzNjg4PLxRM&w=4366&h=2911&q=zoo%20images&ved=0CNEBEDMoxAFqFwoTCODU0ImTnf4CFQAAAAAdAAAAABAo">https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.wildlifesydney.com.au%2Fmedia%2Fl43b41ln%2Fimg_7103-benholgate.jpg&tbnid=JDRSSWIH8DvlQM&vet=10CNEBEDMoxAFqFwoTCODU0ImTnf4CFQAAAAAdAAAAABAo..i&imgrefurl=https%3A%2F%2Fwww.wildlifesydney.com.au%2F&docid=4ZgpzNjg4PLxRM&w=4366&h=2911&q=zoo%20images&ved=0CNEBEDMoxAFqFwoTCODU0ImTnf4CFQAAAAAdAAAAABAo</a>
+                <br> <a href="https://www.google.com/imgres?imgurl=https%3A%2F%2Freidparkzoo.org%2Fwp-content%2Fuploads%2F2018%2F10%2FVisittheZoo_ReidParkZoo.jpg&tbnid=0HYYSlAzAuab6M&vet=12ahUKEwiZqf-Ik53-AhWzg_0HHQ87ClkQMygWegUIARDrAQ..i&imgrefurl=https%3A%2F%2Freidparkzoo.org%2Fvisit%2Factivities%2F&docid=1v2pGV8njtmvGM&w=3500&h=1787&q=zoo%20images&ved=2ahUKEwiZqf-Ik53-AhWzg_0HHQ87ClkQMygWegUIARDrAQ">https://www.google.com/imgres?imgurl=https%3A%2F%2Freidparkzoo.org%2Fwp-content%2Fuploads%2F2018%2F10%2FVisittheZoo_ReidParkZoo.jpg&tbnid=0HYYSlAzAuab6M&vet=12ahUKEwiZqf-Ik53-AhWzg_0HHQ87ClkQMygWegUIARDrAQ..i&imgrefurl=https%3A%2F%2Freidparkzoo.org%2Fvisit%2Factivities%2F&docid=1v2pGV8njtmvGM&w=3500&h=1787&q=zoo%20images&ved=2ahUKEwiZqf-Ik53-AhWzg_0HHQ87ClkQMygWegUIARDrAQ</a>
+                <br> <a href="https://realpython.com/python-requests/"> https://realpython.com/python-requests/  </a>
+                <br> <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/"> https://www.crummy.com/software/BeautifulSoup/bs4/doc/  </a>
+    
+                <br> 
+                <br> 
+
+            </p>
+        </section>
+    </section>
+
+    <section id="chapter2">
+        <h2> 2. Overall Description </h2>
+        <section id="chapter2_1">
+            <h3> 2.1 Product Perspective </h3>
+            <p>
+                The final product is a zoo website, more precisely a web application (open-source) that works independently and is intended for general use. Being an open-source application, it is supposed to be used by an unlimited number of users, including a logging system, which brings a series of extra functionalities. The major components of the application are two: FRONTEND and BACKEND.
+                The FRONT part (HTML, CSS, JavaScript) connects with the user, through it he can see and interact with the WEB server, thus benefiting from all the functionalities of the application.
+                The BACK part (Xampp,Php,Python) ensures the correctness of the functionalities, being the actual implementation area. Of course, a MySQL database is used as a way to store the data included in the product component
+            </p>
+        </section>
+        <section id="chapter2_2">
+            <h3> 2.2 Product Functions </h3>
+            <p>
+                &nbsp; &nbsp; &nbsp; &nbsp; This application offers the user a series of functionalities:
+                <ul type="square" id="unord">
+                    <li> Register </li>
+                    <li> Autentification </li>
+                    <li> Deconnect </li>
+                    <li> Change Password</li>
+                    <li> Add Animals </li>
+                    <li> Remove animals </li>
+                    <li> Account validation </li>
+                    <li> Create / Cancel appointments</li>
+                    <li> Searching for an animal by filters </li>
+                    <li> User Session </li>
+                   
+                </ul>
+                &nbsp; &nbsp; &nbsp; &nbsp; It should be mentioned that all these functionalities are only available for users registered and logged into the application.
+                
+
+            </p>
+        </section>
+        <section id="chapter2_3">
+            <h3> 2.3 User Classes and Characteristics </h3>
+            <p>
+                &nbsp; &nbsp; &nbsp; &nbsp; The Zoo Connect application is intended for all web application users. Due to the functionalities it has, it is especially addressed to users who want to find out information about different categories of animals. It is considered that the user has the basic knowledge of internet operation and access to a device connected to the network.
+
+            </p>
+        </section>
+        <section id="chapter2_4">
+            <h3> 2.4 Operating Environment </h3>
+            <p>
+                &nbsp; &nbsp; &nbsp; &nbsp; Being a web application, Zoo Connect can be accessed from all operating systems (Windows, Linux and MacOS) respectively from any type of browser. These operating environments consist of a user interface generally provided by an application manager, respectively an application programming interface (API) provided by the application manager. The application works on any device/PC with standard specifications, even minimal ones, depending on the speed of the processor, RAM, ROM. The device must be connected to the Internet
+            </p>
+        </section>
+        <section id="chapter2_5">
+            <h3> 2.5 Design and Implementation Constraints </h3>
+            <p>
+                &nbsp; &nbsp; &nbsp; &nbsp; Regarding the design elements, a UI/UX Design will be used that will facilitate easy use by all people interested in the site. It is the duty of the developers to comply with some established specifications
+                by common agreement regarding the color palette, font size, image sizes, spacing.
+                <br>The chosen color palette : <img src="../images/PaletaCulori.png" alt="Paleta Culori" width="800" height="300" alt="Image not found"> 
+                &nbsp; &nbsp; &nbsp; &nbsp;Also, there are constraints on the Backend side: each
+                team member must write code in the initially established languages.
+                <br> Another technical constraint for the good collaboration of the developer team is the regular update (push) on git of any type of information, be they implementations and not only. Working in parallel on the same product is possible
+                be quite demanding and it is recommended to pay more attention to the merging of individually worked code parts.
+            </p>
+        </section>
+        <section id="chapter2_6">
+            <h3> 2.6 User Documentation </h3>
+            <p>
+                &nbsp; &nbsp; &nbsp; &nbsp; The application falls into the category of web applications, and its use will be intuitive, more precisely suggested by the entire interface that facilitates the user's navigation in the application and the discovery of useful commands.
+
+            </p>
+        </section>
+        <section id="chapter2_7">
+            <h3> 2.7 Assumptions and Dependencies </h3>
+            <p>
+                &nbsp; &nbsp; &nbsp; &nbsp; If the user loses the connection to the Internet, then inevitably the web application will stop responding and its functionalities will become unavailable.
+                <br> &nbsp; &nbsp; &nbsp; &nbsp; SOFTWARE Dependency: If the application developers do not pay the necessary attention to the written code, especially when they use APIs, it threatens the performance and security of the application.<br> &nbsp; &nbsp;
+                &nbsp; &nbsp; The connection to the database must be secure, its structuring is very important because it is the basis for registration and authentication, changing the password.
+            </p>
+        </section>
+    </section>
+    <section id="chapter3">
+        <h2> 3.External Interface Requirements </h2>
+        <section id="chapter3_1">
+            <h3> 3.1 User Interfaces </h3>
+            <p>
+                &nbsp;&nbsp; &nbsp; &nbsp;The interfaces between the website and a user are present through a set of architectural elements present in the web page. User login and authentication system
+                represents a means by which their information such as identification data, search history on the website, favorite albums are kept confidential.
+            </p>
+        </section>
+        <section id="chapter3_2">
+            <h3> 3.2 Hardware Interfaces </h3>
+            <p>
+                &nbsp;&nbsp; &nbsp; &nbsp; From a hardware point of view, the website must be accessed from a device that corresponds to the norms of normal operation, being also connected to the Internet.
+            </p>
+        </section>
+        <section id="chapter3_3">
+            <h3> 3.3 Software Interfaces </h3>
+            <p>
+                &nbsp;&nbsp; &nbsp; &nbsp; From a software point of view, the website is connected to a MySQL database, and can be accessed from all operating systems (Windows, Linux) from high-performance browsers such as Firefox or Google Chrome. Like messages
+                with other software components, when the user searches for information, the website obtains information from the database through queries, information that will be displayed on the page in the user's browser
+                following the communication between the server and its browser. . The website will be available only to users who access the www service offered by the Internet based on the TCP/IP protocol. &nbsp;&nbsp; &nbsp; &nbsp;
+        </section>
+        
+    </section>
+    <section id="chapter4">
+        <h2> 4. System Features </h2>
+    </section>
+    <section id="chapter4_1">
+        <h3> 4.1 Register </h3>
+        <p>
+            <br> Real time checking 
+            <br>
+            <br> The user clicks on the boxes where the data must be entered - The system allows the user to enter text in the respective boxes.
+            <br> The user presses the login button, but has not filled in all the required fields - The system does not allow registration and warns the user that he has omitted a field that must be filled in.
+            <br> The user presses the login button, but enters a non-existent username in the database - The system does not allow logging in and warns the user that he has entered a non-existent username.
+            <br> The user presses the login button, but enters a wrong password – The system does not allow logging in and warns the user that he has entered a wrong password.
+            <br> The user presses the login button, and all fields are filled in correctly – The system allows the user to successfully log in to the site.
+            <br>
+            <br>
+            <br> Functional Requirments
+            <br>
+            <br> Taking the text from the username and password input fields
+            <br> Request from frontend to backend.
+    </section>
+    <section id="chapter4_2">
+        <h3> 4.2 Autentification </h3>
+        <p>
+            <br> Real time checking 
+            <br>
+            <br> The user clicks on the boxes where the data must be entered - The system allows the user to enter text in the respective boxes.
+            <br> The user must complete the fields with his first name, last name, password, email and phone number. The system does not allow registration and warns the user that he has omitted a field that must be filled in.
+            <br> The user presses the register button, but has not filled in all the required fields - The system does not allow registration and warns the user that he has omitted a field that must be filled in.
+            <br> The user presses the register button, but enters an existent username in the database - The system does not allow logging in and warns the user that he has entered a non-existent username.
+            <br> The user presses the register button, but enters a wrong password in the "Confirm Password" field – The system does not allow logging in and warns the user that he has entered a wrong password.
+            <br> The user presses the register button, and all fields are filled in correctly – The system allows the user to successfully register to the site.
+            <br>
+            <br>
+            <br> Functional Requirments
+            <br>
+            <br> Taking the text from the name, password, email and phone number input fields
+            <br> Request from frontend to backend.
+        </p>
+    </section>
+    <section id="chapter4_3">
+        <h3> 4.3 Deconnect  </h3>
+        <p>
+            
+            <br> The component allows a logged-in user to log out of the site.
+            <br>
+            
+            <br> The user presses the "Log out" button - The system logs the user off the site.
+            <br>
+            
+            <br> Request from frontend to backend.
+            
+        </p>
+    </section>
+    <section id="chapter4_4">
+        <h3> 4.4 Change Password </h3>
+        <p>
+            <br> Real time checking 
+            <br>
+            <br> The user clicks on the boxes where the data must be entered - The system allows the user to enter text in the respective boxes.
+            <br> The user must complete the fields with his last password and his new password. The system does not allow the change and warns the user that he has omitted a field that must be filled in.
+            <br> The user presses the change button, but has not filled in all the required fields - The system does not allow change and warns the user that he has omitted a field that must be filled in.
+            <br> The user presses the change button, but enters the same password - The system does not allow changing in and warns the user that he has entered a non-existent username.
+           
+            <br>
+            <br>
+            <br> Functional Requirments
+            <br>
+            <br> Taking the text from the password and new password input fields
+            <br> Request from frontend to backend.
+        </p>
+    </section>
+    <section id="chapter4_5">
+        <h3> 4.5 Add Animals </h3>
+        <p>
+           <br> Upon selecting an animal from the filters page, a post request is sent to the
+           <br> animal page, which will search for the JSON corresponding to the animal selected by the user.
+           <br> The animal page will open up, populate the specific section of the page with the animal's information found
+           <br> in the JSON file (name, habitat, description etc).
+        </p>
+    </section>
+
+    <section id="chapter4_6">
+        <h3> 4.6 Remove Animals </h3>
+        <p>
+            <br> The page checks if the current user is an admin(otherwise will not open).
+            <br> The admin can set the visible field of an animal in order to show it on the website or not.
+            
+        </p>
+    </section>
+    <section id="chapter4_7">
+        <h3> 4.7 Account Validation </h3>
+        <p>
+            <br> This functionality is used in the process of registration and autentification. 
+            <br>
+            <br> Checks if the password and username of the current user are found in the data base. This functionality will not let to be more users with the same username or email.
+           
+        </p>
+    </section>
+    <section id="chapter4_8">
+        <h3> 4.8 Create appointments </h3>
+        <p>
+            <br> Real time checking 
+            <br>
+            <br> Technologies used : Ajax.
+            <br> The user must complete the fields with at least the curent date and curent hour. The system does not allow to make an appointement if the date is invalid.
+            <br> The user presses the submit button, but has not filled in all the required fields - The system does not allow to make an appointement and warns the user that he has omitted a field that must be filled in.
+           
+            <br>
+            <br>
+            <br> Functional Requirments
+            <br>
+            <br> The Ajax call is send to process_visit and datas are sent to the data base in a Json format. 
+            <br> Request from frontend to backend.
+        </p>
+    </section>
+    <section id="chapter4_9">
+        <h3> 4.9 Searching for an animal by filters </h3>
+        <p>
+            <br> 
+            <br> 
+            <br>
+            <br> 
+            <br> 
+            <br>
+            <br> 
+            <br> 
+        </p>
+    </section>
+    <section id="chapter4_10">
+        <h3> 4.10 User Session </h3>
+        <p>
+           
+            <br> This functionality check if the user is still logged or not. 
+            <br> If the user is not logged in, he can not use the web site.
+            <br>
+           
+        </p>
+    </section>
+
+    <section id="chapter5">
+        <h4> 5. Software Requirements </h4>
+    </section>
+        
+        <p>
+           
+            <br> An environment for Python with the following libraries: 
+            <ol>
+            <li>lxml</li>
+            <li>requests</li>
+            <li>BeautifulSoup</li>
+            </ol>
+           
+        </p>
+    </section>
+    
+    
