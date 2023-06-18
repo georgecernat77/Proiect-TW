@@ -91,7 +91,7 @@ function checkMatch(event) {
                             errorElement.style.color = 'white';
                             errorElement.style.backgroundColor = '#53A653';
                             setTimeout(function() {
-                                window.location.href = "login.php";
+                                window.location.href = "../login/login.php";
                             }, 1000);
                         } else if (status === 'error') {
                             errorElement.textContent = message;
