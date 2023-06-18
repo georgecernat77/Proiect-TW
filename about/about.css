@@ -68,6 +68,10 @@ body{
   line-height: 1.5;
   
 }
+h2 a {
+  text-decoration: none;
+  color: whitesmoke;
+}
   @media(min-width: 650px){
     .visit-image{
     margin-top: 6%;
