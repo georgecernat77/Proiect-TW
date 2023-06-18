@@ -5,7 +5,8 @@ require_once('../config/config.php');
 
 <?php
 $value = $_GET['name'];
-$jsonName = $value . ".json"; // Concatenate value with ".json"
+$fileName = strtolower($value);
+$jsonName = $fileName . ".json"; // Concatenate value with ".json"
 $directory = "../scraper"; // Directory path
 
 // Get all files in the directory
@@ -24,9 +25,11 @@ foreach ($files as $file) {
         break;
     }
 }
-
+if (!isset($animalContent)) {
+    header("Location: ../animals/animals.php");
+} 
 // Find the image
-$allowedExtensions = array('png', 'jpg');
+$allowedExtensions = array('png');
 $imgPath = '';
 
 $dir = '../images/';
@@ -39,6 +42,17 @@ foreach ($files as $file) {
         break;
     }
 }
+if ($imgPath === '') {
+    foreach ($files as $file) {
+        $extension = pathinfo($file, PATHINFO_EXTENSION);
+        if ($extension === 'jpg' && strpos($file, $value) !== false) {
+            $imgPath = $dir . $file;
+            break;
+        }
+    }
+}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -51,31 +65,22 @@ foreach ($files as $file) {
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="animalTemplate.css">
     <link rel="stylesheet" href="../navbar/nav_bar.css">
-    <title>Document</title>
+    <title>ZooConnect</title>
 </head>
 
 <body>
-    <nav>
+<nav>
         <div class="navbar">
             <i class='bx bx-menu'></i>
-            <div class="logo"><a href="#">ZooConnect</a></div>
+            <div class="logo"><a href="../index/index.php">ZooConnect</a></div>
             <div class="nav-links">
                 <div class="sidebar-logo">
                     <span class="logo-name">ZooConnect</span>
                     <i class='bx bx-x'></i>
                 </div>
                 <ul class="links">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ANIMALS</a></li>
-                    <li>
-                        <a href="#">ATTRACTIONS</a>
-                        <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
-                        <ul class="htmlCss-sub-menu sub-menu">
-                            <li><a href="#">HALLS OF THE DEPTHS</a></li>
-                            <li><a href="#">REPTILE HOUSE</a></li>
-                            <li><a href="#">PLAYGROUND</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="../index/index.php">HOME</a></li>
+                    <li><a href="../animals/animals.php">ANIMALS</a></li>
                     <li><a href="../myaccount/myaccount.php">MY ACCOUNT</a></li>
                     <li><a href="../visitUs/visit.php">VISIT US</a></li>
                     <li><a href="../about/about.php">ABOUT US</a></li>
