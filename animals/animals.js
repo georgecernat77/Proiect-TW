@@ -64,7 +64,8 @@ form.addEventListener('submit', function (event) {
                                 matchingFileElement.style.display = 'block';
                             }
                             else{
-                                matchingFileElement.style.display = 'none';
+                                if(!matchingFiles.includes(file))
+                                  matchingFileElement.style.display = 'none';
                             }
                           }
                     }
