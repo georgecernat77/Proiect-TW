@@ -13,7 +13,7 @@ def scraping():
 
     dictionary={}
     dictionary['visible']=[1]
-    dictionary['name']=[name.replace(' ','_')]
+    dictionary['name']=[name]
     description=[]
     
     descriptionList=scraper.find_all('p',class_='topic-paragraph')
@@ -89,7 +89,7 @@ def scraping():
 
     dictionary={}
     dictionary['visible']=[1]
-    dictionary['name']=[name.replace(' ','_')]
+    dictionary['name']=[name]
 
     description=[]
     
@@ -166,7 +166,7 @@ def scraping():
 
     dictionary={}
     dictionary['visible']=[1]
-    dictionary['name']=[name.replace(' ','_')]
+    dictionary['name']=[name]
 
     description=[]
     
@@ -265,7 +265,7 @@ def scraping():
 
     dictionary={}
     dictionary['visible']=[1]
-    dictionary['name']=[name.replace(' ','_')]
+    dictionary['name']=[name]
 
     description=[]
     
@@ -339,7 +339,7 @@ def scraping():
 
     dictionary={}
     dictionary['visible']=[1]
-    dictionary['name']=[name.replace(' ','_')]
+    dictionary['name']=[name]
 
     description=[]
     
@@ -414,7 +414,7 @@ def scraping():
 
     dictionary={}
     dictionary['visible']=[1]
-    dictionary['name']=[name.replace(' ','_')]
+    dictionary['name']=[name]
 
     description=[]
     
@@ -483,7 +483,7 @@ def scraping():
 
     dictionary={}
     dictionary['visible']=[1]
-    dictionary['name']=[name.replace(' ','_')]
+    dictionary['name']=[name]
 
     description=[]
     
@@ -543,7 +543,7 @@ def scraping():
 
     dictionary={}
     dictionary['visible']=[1]
-    dictionary['name']=[name.replace(' ','_')]
+    dictionary['name']=[name]
 
     description=[]
     
@@ -604,7 +604,7 @@ def scraping():
 
     dictionary={}
     dictionary['visible']=[1]
-    dictionary['name']=[name.replace(' ','_')]
+    dictionary['name']=[name]
 
     places=[]
     places.extend(scraper.find('a',href='https://www.britannica.com/place/United-States'))
@@ -665,7 +665,7 @@ def scraping():
 
     dictionary={}
     dictionary['visible']=[1]
-    dictionary['name']=[name.replace(' ','_')]
+    dictionary['name']=[name]
 
     places=['Africa','Asia']
 
@@ -726,7 +726,7 @@ def scraping():
 
     dictionary={}
     dictionary['visible']=[1]
-    dictionary['name']=[name.replace(' ','_')]
+    dictionary['name']=[name]
 
     dictionary['type']=['reptile']
     dictionary['scientificName']=['Pythonidae']
@@ -792,7 +792,7 @@ def scraping():
 
     dictionary={}
     dictionary['visible']=[1]
-    dictionary['name']=[name.replace(' ','_')]
+    dictionary['name']=[name]
 
     dictionary['diet']=['honey, nuts, fish, fruit, mammals']
     dictionary['longevity']=['20-30 years']
@@ -867,7 +867,7 @@ def scraping():
 
     dictionary={}
     dictionary['visible']=[1]
-    dictionary['name']=[name.replace(' ','_')]
+    dictionary['name']=[name]
     dictionary['id']=['id']
 
 
@@ -935,7 +935,7 @@ def scraping():
 
     dictionary={}
     dictionary['visible']=[1]
-    dictionary['name']=[name.replace(' ','_')]
+    dictionary['name']=[name]
  
     dictionary['diet']=['grass']
     dictionary['longevity']=['35-50 years']
@@ -994,7 +994,7 @@ def scraping():
 
     dictionary={}
     dictionary['visible']=[1]
-    dictionary['name']=[name.replace(' ','_')]
+    dictionary['name']=[name]
 
     dictionary['diet']=['leaves, shoots, stems, roots, larvae, snails, barks, rotten wood']
     dictionary['longevity']=['35 – 40 years']
