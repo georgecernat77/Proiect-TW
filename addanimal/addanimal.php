@@ -117,7 +117,7 @@ require_once('checkadmin.php');
                         </div>
                         <div class="input-box">
                             <span class="details">Scientific<br>Name</span>
-                            <input type="text" id="scientific" name="scientific" pattern="[A-Za-z]+" minlength="3" maxlength="30" required>
+                            <input type="text" id="scientific" name="scientific" pattern="[A-Za-z ]+" minlength="3" maxlength="30" required>
                         </div>
                         <div class="input-box">
                             <span class="details">Animal Image</span>
