@@ -964,7 +964,7 @@ def scraping():
         index=index+1
     dictionary['description']=description
 
-    locationList=scraper.find_all('a', href='https://www.britannica.com/animal/tiger')
+    locationList=scraper.find_all('a', href='https://www.britannica.com/animal/elephant')
 
     relatives=[]
     for location in locationList:
